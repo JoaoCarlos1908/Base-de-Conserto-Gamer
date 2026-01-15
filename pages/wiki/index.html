@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki & Curiosidades | Base de Conserto Gamer</title>
+
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Wiki & Curiosidadess</h1>
+        <p>
+            Uma base de conhecimento dedicada a conserto, manutenção, diagnóstico
+            e modificações de videogames, reunindo informações técnicas de forma
+            organizada, prática e acessível.
+        </p>
+    </header>
+
+    <main>
+
+        <section class="categories">
+
+            <a href="../../pages/wiki/ps2/playstation-2-modelos.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../images/logos/ps2.png" alt="PlayStation 2">
+                    <h2>PlayStation 2</h2>
+                </div>
+            </a>
+
+            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../images/logos/ps3.png" alt="PlayStation 3">
+                    <h2>PlayStation 3</h2>
+                </div>
+            </a>
+
+            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../images/logos/ps4.png" alt="PlayStation 4">
+                    <h2>PlayStation 4</h2>
+                </div>
+            </a>
+
+            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../images/logos/ps5.png" alt="PlayStation 5">
+                    <h2>PlayStation 5</h2>
+                </div>
+            </a>
+
+            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../images/logos/xbox-classic.png" alt="Nintendo Switch">
+                    <h2>Xbox Clássico</h2>
+                </div>
+            </a>
+
+            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../images/logos/xbox360.png" alt="Xbox 360">
+                    <h2>Xbox 360</h2>
+                </div>
+            </a>
+
+            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../images/logos/xbox-one.png" alt="Xbox One">
+                    <h2>Xbox One</h2>
+                </div>
+            </a>
+
+            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../images/logos/xbox-series.png" alt="Xbox Series S e X">
+                    <h2>Xbox Series S / X</h2>
+                </div>
+            </a>
+
+            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../images/logos/switch.png" alt="Nintendo Switch">
+                    <h2>Nintendo Switch</h2>
+                </div>
+            </a>
+
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../../components/footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
