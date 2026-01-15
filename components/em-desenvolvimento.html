@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo em Desenvolvimento | Base de Conserto Gamer</title>
+
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body>
+
+    <header class="console-header">
+        <h1>🚧 Conteúdo em Desenvolvimento</h1>
+        <p class="header-description">
+            Esta seção ainda está sendo construída e em breve
+            estará disponível com novos conteúdos técnicos.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- STATUS -->
+        <section class="diagnostic-guide">
+            <h2>🛠️ O que está acontecendo?</h2>
+            <p>
+                Esta página ou funcionalidade ainda não foi finalizada.
+                Estamos trabalhando para disponibilizar o conteúdo
+                com qualidade técnica, organização e informações confiáveis.
+            </p>
+        </section>
+
+        <!-- MOTIVO -->
+        <section class="diagnostic-guide">
+            <h2>📅 Por que ainda não está disponível?</h2>
+            <ul>
+                <li>Conteúdo em fase de pesquisa ou validação técnica</li>
+                <li>Estrutura da página ainda em desenvolvimento</li>
+                <li>Organização de imagens, diagramas ou guias</li>
+                <li>Padronização com o restante do site</li>
+            </ul>
+        </section>
+
+        <!-- EXPECTATIVA -->
+        <section class="diagnostic-guide">
+            <h2>🚀 O que esperar em breve</h2>
+            <p>
+                Esta seção poderá incluir:
+            </p>
+
+            <ul>
+                <li>Guias técnicos detalhados</li>
+                <li>Curiosidades e informações históricas</li>
+                <li>Diagnósticos comuns</li>
+                <li>Procedimentos de desmontagem e manutenção</li>
+            </ul>
+        </section>
+
+        <!-- COLABORAÇÃO -->
+        <section class="diagnostic-guide">
+            <h2>🤝 Quer colaborar?</h2>
+            <p>
+                Caso você tenha sugestões, correções ou informações
+                técnicas relevantes, fique à vontade para contribuir
+                através das opções de feedback do site.
+            </p>
+        </section>
+
+        <!-- AVISO -->
+        <section class="warning">
+            <h3>ℹ️ Aviso</h3>
+            <p>
+                Esta página existe para manter a navegação funcional
+                e evitar links quebrados enquanto novas seções
+                estão sendo desenvolvidas.
+            </p>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
