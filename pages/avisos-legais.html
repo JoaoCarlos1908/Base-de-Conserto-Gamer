@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avisos Legais | Base de Conserto Gamer</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <header class="console-header">
+        <h1>Avisos Legais</h1>
+        <p class="header-description">
+            Informações importantes sobre responsabilidade,
+            uso do conteúdo e finalidade da Base de Conserto Gamer.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- FINALIDADE DO SITE -->
+        <section class="diagnostic-guide">
+            <h2>📘 Finalidade do Conteúdo</h2>
+            <p>
+                A <strong>Base de Conserto Gamer</strong> tem caráter
+                exclusivamente educacional e informativo.
+                O conteúdo disponibilizado tem como objetivo
+                auxiliar no estudo, diagnóstico e compreensão
+                de equipamentos eletrônicos voltados ao universo gamer.
+            </p>
+        </section>
+
+        <!-- RESPONSABILIDADE -->
+        <section class="diagnostic-guide">
+            <h2>⚠️ Isenção de Responsabilidade</h2>
+            <p>
+                O uso das informações contidas neste site é de
+                inteira responsabilidade do usuário.
+            </p>
+
+            <p>
+                Reparos eletrônicos envolvem riscos, incluindo,
+                mas não se limitando a danos ao equipamento,
+                choque elétrico e perda definitiva do aparelho.
+            </p>
+
+            <p>
+                O autor do projeto não se responsabiliza por
+                quaisquer danos, prejuízos ou perdas resultantes
+                da aplicação das informações aqui apresentadas.
+            </p>
+        </section>
+
+        <!-- CONHECIMENTO TÉCNICO -->
+        <section class="diagnostic-guide">
+            <h2>🧠 Conhecimento Técnico Necessário</h2>
+            <p>
+                Os procedimentos descritos neste site pressupõem
+                que o usuário possua conhecimentos básicos ou
+                avançados em eletrônica e manutenção de equipamentos.
+            </p>
+
+            <p>
+                Caso você não tenha experiência técnica,
+                recomenda-se procurar um profissional qualificado.
+            </p>
+        </section>
+
+        <!-- DIREITOS AUTORAIS -->
+        <section class="diagnostic-guide">
+            <h2>©️ Direitos Autorais</h2>
+            <p>
+                Todo o conteúdo textual produzido especificamente
+                para este site é protegido por direitos autorais.
+            </p>
+
+            <p>
+                É permitida a reprodução parcial do conteúdo,
+                desde que seja citada a fonte e que o uso
+                não tenha finalidade comercial.
+            </p>
+        </section>
+
+        <!-- MARCAS REGISTRADAS -->
+        <section class="diagnostic-guide">
+            <h2>™️ Marcas Registradas</h2>
+            <p>
+                Marcas, logotipos e nomes de produtos mencionados
+                neste site pertencem aos seus respectivos proprietários.
+            </p>
+
+            <p>
+                A utilização dessas marcas tem finalidade
+                exclusivamente informativa e descritiva,
+                não configurando qualquer tipo de afiliação
+                ou endosso.
+            </p>
+        </section>
+
+        <!-- LINKS EXTERNOS -->
+        <section class="diagnostic-guide">
+            <h2>🔗 Links Externos</h2>
+            <p>
+                O site pode conter links para páginas externas,
+                como vídeos, artigos e repositórios.
+            </p>
+
+            <p>
+                A Base de Conserto Gamer não se responsabiliza
+                pelo conteúdo, políticas ou práticas de sites
+                de terceiros.
+            </p>
+        </section>
+
+        <!-- ATUALIZAÇÕES -->
+        <section class="diagnostic-guide">
+            <h2>🔄 Atualizações dos Avisos</h2>
+            <p>
+                Estes avisos legais podem ser atualizados
+                a qualquer momento, sem aviso prévio,
+                para refletir melhorias ou mudanças no projeto.
+            </p>
+        </section>
+
+        <!-- AVISO FINAL -->
+        <section class="warning">
+            <h3>⚠️ Aviso Final</h3>
+            <p>
+                Ao utilizar este site, você concorda automaticamente
+                com todos os termos descritos nesta página.
+                Caso não concorde, recomenda-se não utilizar o conteúdo.
+            </p>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

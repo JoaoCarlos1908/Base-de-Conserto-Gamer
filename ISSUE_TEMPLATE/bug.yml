@@ -1,0 +1,10 @@
+name: 🐞 Reportar problema
+description: Encontrou um erro no site ou conteúdo
+labels: ["bug"]
+body:
+  - type: textarea
+    attributes:
+      label: Descrição do problema
+      placeholder: Explique o que aconteceu
+    validations:
+      required: true

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation 3 – Manutenção e Diagnóstico</title>
+
+    <link rel="stylesheet" href="../../../styles/style.css">
+</head>
+
+<body>
+
+    <header class="console-header">
+        <img src="../../../images/logos/ps3.png" alt="PlayStation 3">
+        <h1>PlayStation 3</h1>
+        <p>
+            Guia técnico de manutenção, diagnóstico e reparo do PlayStation 3,
+            voltado para estudo, manutenção preventiva e reparos eletrônicos.
+        </p>
+    </header>
+
+    <main>
+        <section class="diagnostic-guide">
+            <h2>🧠 Guia Básico de Diagnóstico – PlayStation 3</h2>
+
+            <ul>
+                <li>
+                    <strong>Não liga:</strong>
+                    verificar fonte de alimentação, fusível, standby (5V), botão power e placa-mãe
+                </li>
+
+                <li>
+                    <strong>Liga e desliga rapidamente:</strong>
+                    curto na fonte, falha na linha de 12V, proteção da fonte ou defeito na placa-mãe
+                </li>
+
+                <li>
+                    <strong>Liga sem imagem:</strong>
+                    cabo HDMI/AV, CI HDMI, RSX, solda fria (YLOD em alguns modelos)
+                </li>
+
+                <li>
+                    <strong>Não lê disco:</strong>
+                    leitor Blu-ray, flat cables, motores, lente do laser ou placa do drive
+                </li>
+
+                <li>
+                    <strong>Superaquecimento:</strong>
+                    pasta térmica ressecada, poeira excessiva, cooler defeituoso ou má ventilação
+                </li>
+            </ul>
+
+            <p class="tip">
+                ⚠️ No PS3, problemas térmicos e falhas de solda (BGA) são causas comuns de defeitos graves.
+            </p>
+        </section>
+
+
+        <section class="console-sections">
+            <a href="desmontagem/index.html" class="card-link">
+                <div class="category-card">
+                    <h3>🔧 Desmontagem</h3>
+                    <p>Passo a passo para abertura segura do console.</p>
+                </div>
+            </a>
+
+            <a href="defeitos.html" class="card-link">
+                <div class="category-card">
+                    <h3>❌ Defeitos Comuns</h3>
+                    <p>Sintomas, causas e soluções mais frequentes.</p>
+                </div>
+            </a>
+
+            <a href="esquemas.html" class="card-link">
+                <div class="category-card">
+                    <h3>📐 Diagramas e Tensões</h3>
+                    <p>Mapeamento de voltagens e sinais.</p>
+                </div>
+            </a>
+
+            <a href="diagnostico.html" class="card-link">
+                <div class="category-card">
+                    <h3>🧪 Diagnóstico Avançado</h3>
+                    <p>Testes com multímetro e análise de falhas.</p>
+                </div>
+            </a>
+
+            <a href="cuidados.html" class="card-link">
+                <div class="category-card">
+                    <h3>🧼 Cuidados e Prevenção</h3>
+                    <p>Manutenção preventiva e boas práticas.</p>
+                </div>
+            </a>
+        </section>
+
+        <section class="warning">
+            <h3>⚠️ Aviso Importante</h3>
+            <p>
+                Este conteúdo é destinado a fins educacionais.
+                Reparos eletrônicos envolvem riscos. Execute apenas
+                se possuir conhecimento técnico adequado.
+            </p>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../../../components/footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

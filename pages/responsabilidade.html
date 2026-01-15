@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsabilidade Técnica | Base de Conserto Gamer</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <header class="console-header">
+        <h1>Responsabilidade Técnica</h1>
+        <p class="header-description">
+            Informações importantes sobre limites técnicos,
+            aplicação prática e responsabilidades no uso
+            do conteúdo disponibilizado.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- NATUREZA DO CONTEÚDO -->
+        <section class="diagnostic-guide">
+            <h2>📚 Natureza do Conteúdo</h2>
+            <p>
+                Todo o conteúdo presente na <strong>Base de Conserto Gamer</strong>
+                é disponibilizado com finalidade educacional,
+                informativa e de apoio técnico.
+            </p>
+
+            <p>
+                As informações têm como objetivo auxiliar no entendimento
+                do funcionamento de consoles, acessórios e sistemas eletrônicos,
+                não substituindo formação técnica profissional.
+            </p>
+        </section>
+
+        <!-- RESPONSABILIDADE DO USUÁRIO -->
+        <section class="diagnostic-guide">
+            <h2>👤 Responsabilidade do Usuário</h2>
+            <p>
+                O usuário é integralmente responsável por qualquer aplicação prática
+                das informações contidas neste site.
+            </p>
+
+            <ul>
+                <li>Avaliar seu nível técnico antes de executar procedimentos</li>
+                <li>Utilizar ferramentas e equipamentos adequados</li>
+                <li>Respeitar normas de segurança elétrica e eletrônica</li>
+                <li>Testar procedimentos em ambientes controlados</li>
+            </ul>
+        </section>
+
+        <!-- LIMITES DE RESPONSABILIDADE -->
+        <section class="diagnostic-guide">
+            <h2>⚠️ Limites de Responsabilidade</h2>
+            <p>
+                A Base de Conserto Gamer não se responsabiliza por:
+            </p>
+
+            <ul>
+                <li>Danos a equipamentos, componentes ou acessórios</li>
+                <li>Perda de dados ou funcionamento incorreto</li>
+                <li>Acidentes decorrentes de uso inadequado</li>
+                <li>Falhas causadas por interpretação incorreta do conteúdo</li>
+            </ul>
+        </section>
+
+        <!-- VARIAÇÕES DE HARDWARE -->
+        <section class="diagnostic-guide">
+            <h2>🔍 Variações de Hardware</h2>
+            <p>
+                Consoles e equipamentos eletrônicos podem apresentar
+                variações de hardware, revisões internas e diferenças regionais.
+            </p>
+
+            <p>
+                Por esse motivo, nem todos os procedimentos descritos
+                se aplicam de forma universal a todos os modelos.
+            </p>
+        </section>
+
+        <!-- GARANTIA E ASSISTÊNCIA -->
+        <section class="diagnostic-guide">
+            <h2>🧾 Garantia e Assistência Técnica</h2>
+            <p>
+                A abertura, modificação ou reparo de equipamentos
+                pode resultar na perda de garantia do fabricante.
+            </p>
+
+            <p>
+                Caso o equipamento esteja em garantia,
+                recomenda-se procurar uma assistência técnica autorizada.
+            </p>
+        </section>
+
+        <!-- ISENÇÃO DE RESPONSABILIDADE -->
+        <section class="diagnostic-guide">
+            <h2>📄 Isenção de Responsabilidade</h2>
+            <p>
+                O uso das informações disponibilizadas é de inteira
+                responsabilidade do usuário, que concorda que
+                o site atua apenas como fonte de conhecimento técnico.
+            </p>
+        </section>
+
+        <!-- AVISO FINAL -->
+        <section class="warning">
+            <h3>🚨 Aviso Importante</h3>
+            <p>
+                Ao utilizar este site, você reconhece e concorda
+                com os termos de responsabilidade técnica aqui descritos,
+                assumindo total responsabilidade por qualquer ação tomada
+                com base nas informações fornecidas.
+            </p>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

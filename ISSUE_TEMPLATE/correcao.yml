@@ -1,0 +1,8 @@
+name: 🔧 Correção técnica
+description: Enviar correção ou informação técnica
+labels: ["technical"]
+body:
+  - type: textarea
+    attributes:
+      label: Correção proposta
+      placeholder: Descreva a correção técnica

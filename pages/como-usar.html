@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Usar o Site | Base de Conserto Gamer</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <header class="console-header">
+        <h1>Como Usar o Site</h1>
+        <p class="header-description">
+            Um guia prático para navegar, encontrar informações
+            e utilizar corretamente a Base de Conserto Gamer.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- VISÃO GERAL -->
+        <section class="diagnostic-guide">
+            <h2>🧭 Visão Geral</h2>
+            <p>
+                A <strong>Base de Conserto Gamer</strong> foi organizada
+                para facilitar a consulta técnica, permitindo que você
+                encontre rapidamente informações sobre consoles,
+                acessórios e procedimentos de manutenção.
+            </p>
+
+            <p>
+                O conteúdo é dividido por categorias e modelos,
+                seguindo uma estrutura lógica e padronizada.
+            </p>
+        </section>
+
+        <!-- NAVEGAÇÃO -->
+        <section class="diagnostic-guide">
+            <h2>🗂️ Navegação pelo Site</h2>
+
+            <p>Você pode navegar pelo site das seguintes formas:</p>
+
+            <ul>
+                <li>
+                    <strong>Menu principal:</strong> acesso direto às
+                    principais seções do projeto
+                </li>
+                <li>
+                    <strong>Páginas por console:</strong> organizadas
+                    por fabricante, modelo e versão
+                </li>
+                <li>
+                    <strong>Links internos:</strong> conectam páginas
+                    relacionadas para facilitar o estudo
+                </li>
+            </ul>
+        </section>
+
+        <!-- ESTRUTURA DAS PÁGINAS -->
+        <section class="diagnostic-guide">
+            <h2>📄 Estrutura das Páginas Técnicas</h2>
+
+            <p>
+                Cada página técnica segue um padrão para
+                facilitar a leitura e compreensão:
+            </p>
+
+            <ul>
+                <li>Descrição do equipamento</li>
+                <li>Informações gerais e revisões</li>
+                <li>Defeitos comuns</li>
+                <li>Possíveis causas</li>
+                <li>Procedimentos de diagnóstico</li>
+                <li>Observações importantes</li>
+            </ul>
+        </section>
+
+        <!-- BUSCA DE INFORMAÇÕES -->
+        <section class="diagnostic-guide">
+            <h2>🔍 Como Encontrar Informações</h2>
+
+            <p>
+                Para encontrar o conteúdo desejado:
+            </p>
+
+            <ul>
+                <li>Identifique o fabricante do console</li>
+                <li>Selecione o modelo correto</li>
+                <li>Verifique a versão ou revisão da placa</li>
+                <li>Leia atentamente as observações técnicas</li>
+            </ul>
+
+            <p>
+                Sempre confirme se o procedimento descrito
+                corresponde exatamente ao modelo que você está utilizando.
+            </p>
+        </section>
+
+        <!-- BOAS PRÁTICAS -->
+        <section class="diagnostic-guide">
+            <h2>🛠️ Boas Práticas de Uso</h2>
+
+            <ul>
+                <li>Leia toda a página antes de iniciar qualquer procedimento</li>
+                <li>Utilize ferramentas adequadas</li>
+                <li>Desligue o equipamento da energia</li>
+                <li>Evite improvisações</li>
+                <li>Registre suas observações durante o reparo</li>
+            </ul>
+        </section>
+
+        <!-- CONTRIBUIÇÕES -->
+        <section class="diagnostic-guide">
+            <h2>🤝 Uso Colaborativo</h2>
+
+            <p>
+                Caso encontre erros, informações desatualizadas
+                ou queira sugerir melhorias, utilize a área de
+                feedback ou abra uma issue no repositório do projeto.
+            </p>
+
+            <p>
+                A colaboração ajuda a manter o conteúdo atualizado
+                e confiável para toda a comunidade.
+            </p>
+        </section>
+
+        <!-- AVISO -->
+        <section class="warning">
+            <h3>⚠️ Aviso Importante</h3>
+            <p>
+                As informações disponibilizadas têm caráter educacional.
+                Reparos eletrônicos envolvem riscos e devem ser realizados
+                apenas por pessoas com conhecimento técnico adequado.
+            </p>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

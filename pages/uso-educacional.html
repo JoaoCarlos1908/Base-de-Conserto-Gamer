@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso Educacional | Base de Conserto Gamer</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <header class="console-header">
+        <h1>Uso Educacional</h1>
+        <p class="header-description">
+            Entenda como o conteúdo da Base de Conserto Gamer
+            deve ser utilizado para fins de aprendizado,
+            estudo e capacitação técnica.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- OBJETIVO EDUCACIONAL -->
+        <section class="diagnostic-guide">
+            <h2>🎓 Objetivo Educacional</h2>
+            <p>
+                A <strong>Base de Conserto Gamer</strong> foi criada com o objetivo
+                de servir como uma plataforma de aprendizado técnico,
+                voltada ao estudo de eletrônica aplicada a consoles,
+                acessórios e equipamentos relacionados ao universo gamer.
+            </p>
+
+            <p>
+                Todo o conteúdo tem foco em ensino, compreensão de funcionamento,
+                diagnóstico de falhas e boas práticas de manutenção.
+            </p>
+        </section>
+
+        <!-- PÚBLICO-ALVO -->
+        <section class="diagnostic-guide">
+            <h2>👥 Público-Alvo</h2>
+            <ul>
+                <li>Estudantes de eletrônica e áreas técnicas</li>
+                <li>Técnicos iniciantes e profissionais em aprimoramento</li>
+                <li>Entusiastas de manutenção e reparo de consoles</li>
+                <li>Criadores de conteúdo técnico e educacional</li>
+            </ul>
+        </section>
+
+        <!-- COMO UTILIZAR -->
+        <section class="diagnostic-guide">
+            <h2>📖 Como Utilizar o Conteúdo</h2>
+            <p>
+                O conteúdo do site pode ser utilizado como:
+            </p>
+
+            <ul>
+                <li>Material de apoio para estudos e treinamentos</li>
+                <li>Referência para diagnóstico e análise técnica</li>
+                <li>Base para pesquisas acadêmicas e projetos educacionais</li>
+                <li>Complemento para cursos e aulas práticas</li>
+            </ul>
+        </section>
+
+        <!-- LIMITAÇÕES -->
+        <section class="diagnostic-guide">
+            <h2>⚠️ Limitações do Conteúdo</h2>
+            <p>
+                Apesar do cuidado na elaboração do material,
+                as informações não substituem formação técnica formal,
+                cursos profissionalizantes ou certificações oficiais.
+            </p>
+
+            <p>
+                Alguns procedimentos descritos podem variar
+                conforme revisões de hardware, regiões e fabricantes.
+            </p>
+        </section>
+
+        <!-- RESPONSABILIDADE EDUCACIONAL -->
+        <section class="diagnostic-guide">
+            <h2>🧠 Responsabilidade no Aprendizado</h2>
+            <p>
+                O usuário é responsável por avaliar seu nível
+                de conhecimento técnico antes de aplicar
+                qualquer procedimento descrito.
+            </p>
+
+            <p>
+                Recomenda-se sempre a prática em ambientes controlados,
+                equipamentos de teste ou dispositivos fora de garantia.
+            </p>
+        </section>
+
+        <!-- USO NÃO COMERCIAL -->
+        <section class="diagnostic-guide">
+            <h2>🚫 Uso Comercial</h2>
+            <p>
+                O conteúdo disponibilizado tem finalidade
+                predominantemente educacional e não comercial.
+            </p>
+
+            <p>
+                A utilização do material para fins comerciais,
+                como cursos pagos ou treinamentos remunerados,
+                deve respeitar os direitos autorais e citar a fonte.
+            </p>
+        </section>
+
+        <!-- AVISO FINAL -->
+        <section class="warning">
+            <h3>📌 Aviso Importante</h3>
+            <p>
+                Ao acessar e utilizar este conteúdo,
+                você reconhece que está fazendo uso
+                de um material educacional e informativo,
+                assumindo total responsabilidade por sua aplicação prática.
+            </p>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

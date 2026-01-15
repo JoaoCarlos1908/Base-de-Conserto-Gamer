@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation 3 | Desmontagem</title>
+
+    <link rel="stylesheet" href="../../../../styles/style.css">
+</head>
+
+<body>
+
+    <header class="console-header">
+        <h1>PlayStation 3 – Desmontagem</h1>
+        <p>
+            Selecione o modelo do PlayStation 3 para acessar
+            o guia de desmontagem correspondente.
+        </p>
+    </header>
+
+    <main>
+
+        <section class="categories">
+
+            <!-- PS3 FAT -->
+            <a href="ps3-fat.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../../images/consoles/ps3-fat.png" alt="PlayStation 3 Fat">
+                    <h2>PS3 Fat</h2>
+                </div>
+            </a>
+
+            <!-- PS3 SLIM -->
+            <a href="ps3-slim.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../../images/consoles/ps3-slim.png" alt="PlayStation 3 Slim">
+                    <h2>PS3 Slim</h2>
+                </div>
+            </a>
+
+            <!-- PS3 SUPER SLIM -->
+            <a href="ps3-superslim.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../../images/consoles/ps3-superSlim.png" alt="PlayStation 3 Super Slim">
+                    <h2>PS3 Super Slim</h2>
+                </div>
+            </a>
+
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../../../../components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

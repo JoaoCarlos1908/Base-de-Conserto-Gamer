@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre | Base de Conserto Gamer</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <header class="console-header">
+        <h1>Sobre a Base de Conserto Gamer</h1>
+        <p class="header-description">
+            Um projeto criado para centralizar conhecimento técnico,
+            facilitar diagnósticos e preservar a história da manutenção
+            de consoles e equipamentos gamer.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- O QUE É O PROJETO -->
+        <section class="diagnostic-guide">
+            <h2>🎮 O que é a Base de Conserto Gamer?</h2>
+            <p>
+                A <strong>Base de Conserto Gamer</strong> é um projeto educacional e técnico
+                voltado à manutenção, diagnóstico e reparo de consoles,
+                acessórios e equipamentos relacionados ao universo gamer.
+            </p>
+
+            <p>
+                O objetivo é reunir, em um único local, informações organizadas
+                e confiáveis, como:
+            </p>
+
+            <ul>
+                <li>Guias de desmontagem</li>
+                <li>Defeitos comuns e soluções</li>
+                <li>Diagramas de tensões e sinais</li>
+                <li>Valores e referências de componentes</li>
+                <li>Guias práticos de diagnóstico</li>
+            </ul>
+        </section>
+
+        <!-- POR QUE O PROJETO EXISTE -->
+        <section class="diagnostic-guide">
+            <h2>🧠 Por que este projeto existe?</h2>
+            <p>
+                Muitas informações técnicas sobre consoles estão espalhadas
+                pela internet, desatualizadas ou sem organização.
+            </p>
+
+            <p>
+                A Base de Conserto Gamer surge para:
+            </p>
+
+            <ul>
+                <li>Centralizar conhecimento técnico confiável</li>
+                <li>Facilitar o aprendizado de iniciantes</li>
+                <li>Apoiar técnicos e estudantes de eletrônica</li>
+                <li>Preservar informações de consoles antigos</li>
+                <li>Reduzir descartes desnecessários de equipamentos</li>
+            </ul>
+        </section>
+
+        <!-- COMO O CONTEÚDO É ORGANIZADO -->
+        <section class="diagnostic-guide">
+            <h2>🗂 Como o conteúdo é organizado?</h2>
+
+            <p>
+                O conteúdo é estruturado por categorias e modelos,
+                permitindo navegação rápida e lógica:
+            </p>
+
+            <ul>
+                <li>Consoles organizados por fabricante e modelo</li>
+                <li>Guias separados por desmontagem, diagnóstico e reparo</li>
+                <li>Diferenças técnicas entre revisões e séries</li>
+                <li>Conteúdo reutilizável como base para outros consoles</li>
+            </ul>
+        </section>
+
+        <!-- COLABORAÇÃO -->
+        <section class="diagnostic-guide">
+            <h2>🤝 Projeto colaborativo</h2>
+
+            <p>
+                A Base de Conserto Gamer é um projeto em constante evolução.
+                Sugestões, correções técnicas e melhorias são bem-vindas.
+            </p>
+
+            <p>
+                Você pode colaborar através de:
+            </p>
+
+            <ul>
+                <li>Issues no GitHub (correções e sugestões)</li>
+                <li>Envio de feedback técnico</li>
+                <li>Indicação de fontes confiáveis</li>
+            </ul>
+        </section>
+
+        <!-- AVISO -->
+        <section class="warning">
+            <h3>⚠️ Aviso Importante</h3>
+            <p>
+                Todo o conteúdo disponibilizado neste projeto tem caráter
+                educacional. Reparos eletrônicos envolvem riscos e devem
+                ser realizados apenas por pessoas com conhecimento técnico
+                adequado.
+            </p>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

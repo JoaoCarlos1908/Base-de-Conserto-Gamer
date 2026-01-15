@@ -1,0 +1,8 @@
+name: 💡 Sugerir melhoria
+description: Ideia para melhorar o site ou conteúdo
+labels: ["enhancement"]
+body:
+  - type: textarea
+    attributes:
+      label: Sua sugestão
+      placeholder: Descreva a melhoria
