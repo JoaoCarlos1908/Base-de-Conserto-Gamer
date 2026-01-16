@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlayStation 2 – Manutenção e Diagnóstico</title>
-    
+    <title>Nintendo Switch – Manutenção e Diagnóstico</title>
+
     <link rel="stylesheet" href="../../../styles/style.css">
 </head>
 
 <body>
 
     <header class="console-header">
-        <img src="../../../images/logos/ps2.png" alt="PlayStation 2">
-        <h1>PlayStation 2</h1>
+        <img src="../../../images/logos/switch.png" alt="Nintendo Switch">
+        <h1>Nintendo Switch</h1>
         <p>
-            Guia técnico de manutenção, diagnóstico e reparo do PlayStation 2,
+            Guia técnico de manutenção, diagnóstico e reparo do Nintendo Switch,
             voltado para estudo, manutenção preventiva e reparos eletrônicos.
         </p>
     </header>
@@ -25,14 +25,15 @@
             <h2>🧠 Guia Básico de Diagnóstico</h2>
 
             <ul>
-                <li><strong>Não liga:</strong> verificar fonte, fusível, standby e chave liga/desliga</li>
-                <li><strong>Liga sem imagem:</strong> cabo AV, CI de vídeo, BA chip</li>
-                <li><strong>Não lê disco:</strong> laser, flat do leitor, motores, regulagem</li>
-                <li><strong>Desliga sozinho:</strong> superaquecimento, curto na linha 12V</li>
+                <li><strong>Não liga:</strong> verificar bateria, conector USB-C, CI de carga (M92T36 / BQ)</li>
+                <li><strong>Não carrega:</strong> porta USB-C, circuito de proteção, linha VBAT</li>
+                <li><strong>Liga sem imagem:</strong> display, flat da tela, backlight, CI P13USB</li>
+                <li><strong>Superaquecimento:</strong> dissipador, pasta térmica, cooler</li>
+                <li><strong>Joy-Con não conecta:</strong> trilhas laterais, flat do trilho, firmware</li>
             </ul>
 
             <p class="tip">
-                ⚠️ Sempre iniciar o diagnóstico pela fonte e alimentação primária.
+                ⚠️ Sempre iniciar o diagnóstico pela bateria e circuito de carga antes de prosseguir.
             </p>
         </section>
 
@@ -54,21 +55,21 @@
             <a href="../../../components/em-desenvolvimento.html" class="card-link">
                 <div class="category-card">
                     <h3>📐 Diagramas e Tensões</h3>
-                    <p>Mapeamento de voltagens e sinais.</p>
+                    <p>Linhas de alimentação, USB-C e circuito de carga.</p>
                 </div>
             </a>
 
             <a href="../../../components/em-desenvolvimento.html" class="card-link">
                 <div class="category-card">
                     <h3>🧪 Diagnóstico Avançado</h3>
-                    <p>Testes com multímetro e análise de falhas.</p>
+                    <p>Análise de consumo, curto em VBAT e ICs críticos.</p>
                 </div>
             </a>
 
             <a href="../../../components/em-desenvolvimento.html" class="card-link">
                 <div class="category-card">
                     <h3>🧼 Cuidados e Prevenção</h3>
-                    <p>Manutenção preventiva e boas práticas.</p>
+                    <p>Boas práticas para evitar falhas comuns no Switch.</p>
                 </div>
             </a>
         </section>
@@ -77,8 +78,8 @@
             <h3>⚠️ Aviso Importante</h3>
             <p>
                 Este conteúdo é destinado a fins educacionais.
-                Reparos eletrônicos envolvem riscos. Execute apenas
-                se possuir conhecimento técnico adequado.
+                Reparos eletrônicos em placas multilayer envolvem riscos.
+                Execute apenas se possuir conhecimento técnico adequado.
             </p>
         </section>
     </main>

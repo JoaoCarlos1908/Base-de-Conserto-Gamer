@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo Switch | Desmontagem</title>
+
+    <link rel="stylesheet" href="../../../../styles/style.css">
+</head>
+
+<body>
+
+    <header class="console-header">
+        <h1>Nintendo Switch – Desmontagem</h1>
+        <p>
+            Selecione o modelo do Nintendo Switch para acessar
+            o guia de desmontagem correspondente.
+        </p>
+    </header>
+
+    <main>
+
+        <section class="categories">
+
+            <a href="switch-v1-v2.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../../images/consoles/switch-v1-v2.png" alt="Nintendo Switch V1 e V2">
+                    <h2>Switch V1 / V2</h2>
+                </div>
+            </a>
+
+            <a href="switch-lite.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../../images/consoles/switch-lite.png" alt="Nintendo Switch Lite">
+                    <h2>Switch Lite</h2>
+                </div>
+            </a>
+
+            <a href="switch-oled.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../../images/consoles/switch-oled.png" alt="Nintendo Switch OLED">
+                    <h2>Switch OLED</h2>
+                </div>
+            </a>
+
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../../../../components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
