@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xbox Series – Desmontagem</title>
+
+    <link rel="stylesheet" href="../../../../styles/style.css">
+</head>
+
+<body>
+
+    <header class="console-header">
+        <h1>Xbox Series – Desmontagem</h1>
+        <p>
+            Selecione o modelo do Xbox Series para acessar
+            o guia de desmontagem correspondente.
+        </p>
+    </header>
+
+    <main>
+
+        <section class="categories">
+
+            <a href="xbox-series-s.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../../images/consoles/xbox-series-s.png" alt="Xbox Series S">
+                    <h2>Xbox Series S</h2>
+                </div>
+            </a>
+
+            <a href="xbox-series-x.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../../images/consoles/xbox-series-x.png" alt="Xbox Series X">
+                    <h2>Xbox Series X</h2>
+                </div>
+            </a>
+
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../../../../components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
