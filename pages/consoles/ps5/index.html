@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation 5 – Manutenção e Diagnóstico</title>
+
+    <link rel="stylesheet" href="../../../styles/style.css">
+</head>
+
+<body>
+
+    <header class="console-header">
+        <img src="../../../images/logos/ps5.png" alt="PlayStation 5">
+        <h1>PlayStation 5</h1>
+        <p>
+            Guia técnico de manutenção, diagnóstico e reparo do PlayStation 5,
+            com foco em estudo, manutenção preventiva e reparos eletrônicos.
+        </p>
+    </header>
+
+    <main>
+        <!-- GUIA DE DIAGNÓSTICO -->
+        <section class="diagnostic-guide">
+            <h2>🧠 Guia Básico de Diagnóstico</h2>
+
+            <ul>
+                <li>
+                    <strong>Não liga:</strong>
+                    verificar fonte de alimentação, linha standby 5V,
+                    fusível primário, MOSFETs, circuito PFC e placa de potência
+                </li>
+
+                <li>
+                    <strong>Liga e desliga rapidamente:</strong>
+                    curto nas linhas de alimentação, falha na fonte,
+                    proteção térmica ou problema na APU
+                </li>
+
+                <li>
+                    <strong>Liga sem imagem:</strong>
+                    cabo HDMI, filtro ESD HDMI, CI HDMI,
+                    solda BGA da APU ou falha na linha de vídeo
+                </li>
+
+                <li>
+                    <strong>Superaquecimento:</strong>
+                    metal líquido mal distribuído,
+                    vedação do dissipador comprometida,
+                    cooler com falha ou obstrução do sistema de ventilação
+                </li>
+
+                <li>
+                    <strong>Não lê disco:</strong>
+                    unidade Blu-ray, flat do drive,
+                    motor do disco ou defeito no conjunto óptico
+                </li>
+            </ul>
+
+            <p class="tip">
+                ⚠️ No PS5, falhas de desligamento e superaquecimento estão
+                frequentemente relacionadas à dissipação térmica,
+                vedação do metal líquido e proteção da fonte.
+            </p>
+        </section>
+
+
+        <!-- SEÇÕES -->
+        <section class="console-sections">
+            <a href="desmontagem/index.html" class="card-link">
+                <div class="category-card">
+                    <h3>🔧 Desmontagem</h3>
+                    <p>Procedimentos seguros para abertura do console.</p>
+                </div>
+            </a>
+
+            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+                <div class="category-card">
+                    <h3>❌ Defeitos Comuns</h3>
+                    <p>Principais falhas do PS4 e suas causas.</p>
+                </div>
+            </a>
+
+            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+                <div class="category-card">
+                    <h3>📐 Diagramas e Tensões</h3>
+                    <p>Mapeamento de linhas, tensões e sinais.</p>
+                </div>
+            </a>
+
+            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+                <div class="category-card">
+                    <h3>🧪 Diagnóstico Avançado</h3>
+                    <p>Análise com multímetro, fonte assimétrica e termovisor.</p>
+                </div>
+            </a>
+
+            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+                <div class="category-card">
+                    <h3>🧼 Cuidados e Prevenção</h3>
+                    <p>Limpeza interna, troca de pasta térmica e boas práticas.</p>
+                </div>
+            </a>
+        </section>
+
+        <!-- AVISO -->
+        <section class="warning">
+            <h3>⚠️ Aviso Importante</h3>
+            <p>
+                Este conteúdo é destinado exclusivamente a fins educacionais.
+                Reparos em consoles modernos envolvem riscos elevados e
+                procedimentos avançados. Execute apenas se possuir
+                conhecimento técnico adequado.
+            </p>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../../../components/footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation 5 | Desmontagem</title>
+
+    <link rel="stylesheet" href="../../../../styles/style.css">
+</head>
+
+<body>
+
+    <header class="console-header">
+        <h1>PlayStation 5 – Desmontagem</h1>
+        <p>
+            Selecione o modelo do PlayStation 5 para acessar
+            o guia de desmontagem correspondente.
+        </p>
+    </header>
+
+    <main>
+
+        <section class="categories">
+
+            <!-- PS5 FAT -->
+            <a href="ps5-fat.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../../images/consoles/ps5-fat.png" alt="PlayStation 5 FAT">
+                    <h2>PS5 FAT</h2>
+                </div>
+            </a>
+
+            <!-- PS5 SLIM -->
+            <a href="ps5-slim.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../../images/consoles/ps5-slim.png" alt="PlayStation 5 Slim">
+                    <h2>PS5 Slim</h2>
+                </div>
+            </a>
+
+            <!-- PS5 PRO -->
+            <a href="ps5-pro.html" class="card-link">
+                <div class="category-card console-card">
+                    <img src="../../../../images/consoles/ps5-pro.png" alt="PlayStation 5 Pro">
+                    <h2>PS5 Pro</h2>
+                </div>
+            </a>
+
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../../../../components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
