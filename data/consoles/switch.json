@@ -13,12 +13,12 @@
         {
             "name": "Nitendo Switch Lite",
             "image": "switch-lite.png",
-            "page": ""page/consoles/nitendo-switch/switch-lite.html"
+            "page": "page/consoles/nitendo-switch/switch-lite.html"
         },
         {
             "name": "Nitendo Switch OLED",
             "image": "switch-oled.png",
-            "page": ""page/consoles/nitendo-switch/switch-oled.html"
+            "page": "page/consoles/nitendo-switch/switch-oled.html"
         }
     ]
 }
