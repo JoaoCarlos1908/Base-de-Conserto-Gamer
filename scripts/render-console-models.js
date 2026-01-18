@@ -1,6 +1,6 @@
 async function loadFooter() {
     try {
-        const response = await fetch("/Base-de-Conserto-Gamer/components/footer.html");
+        const response = await fetch("components/footer.html");
         const footerHTML = await response.text();
         document.getElementById("footer").innerHTML = footerHTML;
     } catch (error) {
@@ -10,7 +10,7 @@ async function loadFooter() {
 
 async function loadConsoleModels(consoleId) {
     try {
-        const response = await fetch(`/Base-de-Conserto-Gamer/data/consoles/${consoleId}.json`);
+        const response = await fetch(`data/consoles/${consoleId}.json`);
         const data = await response.json();
 
         // 🔹 Título da aba
@@ -34,7 +34,7 @@ async function loadConsoleModels(consoleId) {
 
             card.innerHTML = `
         <div class="category-card console-card">
-          <img src="/Base-de-Conserto-Gamer/images/consoles/${model.image}" alt="${model.name}">
+          <img src="images/consoles/${model.image}" alt="${model.name}">
           <h2>${model.name}</h2>
         </div>
       `;
