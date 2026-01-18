@@ -8,12 +8,12 @@
         {
             "name": "PS1 FAT",
             "image": "ps1-fat.png",
-            "page": "ps1-fat.html"
+            "page": "pages/consoles/ps1/desmontagem/ps1-fat.html"
         },
         {
             "name": "ps1 Slim",
             "image": "ps1-slim.png",
-            "page": "ps1-slim.html"
+            "page": "pages/consoles/ps1/desmontagem/ps1-slim.html"
         }
     ]
 }

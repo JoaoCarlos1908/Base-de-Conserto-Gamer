@@ -8,17 +8,17 @@
         {
             "name": "PS3 FAT",
             "image": "ps3-fat.png",
-            "page": "ps3-fat.html"
+            "page": "pages/consoles/ps3/desmontagem/ps3-fat.html"
         },
         {
             "name": "PS3 Slim",
             "image": "ps3-slim.png",
-            "page": "ps3-slim.html"
+            "page": "pages/consoles/ps3/desmontagem/ps3-slim.html"
         },
         {
             "name": "PS3 Super Slim",
             "image": "ps3-superSlim.png",
-            "page": "ps3-superSlim.html"
+            "page": "pages/consoles/ps3/desmontagem/ps3-superSlim.html"
         }
     ]
 }

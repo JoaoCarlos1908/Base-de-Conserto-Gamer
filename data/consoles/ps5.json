@@ -8,17 +8,17 @@
         {
             "name": "PS5 FAT",
             "image": "ps5-fat.png",
-            "page": "ps5-fat.html"
+            "page": "pages/consoles/ps5/desmontagem/ps5-fat.html"
         },
         {
             "name": "PS5 Slim",
             "image": "ps5-slim.png",
-            "page": "ps5-slim.html"
+            "page": "pages/consoles/ps5/desmontagem/ps5-slim.html"
         },
         {
             "name": "PS5 Pro",
             "image": "ps5-pro.png",
-            "page": "ps5-pro.html"
+            "page": "pages/consoles/ps5/desmontagem/ps5-pro.html"
         }
     ]
 }

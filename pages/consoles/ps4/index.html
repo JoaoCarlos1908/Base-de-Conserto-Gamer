@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayStation 4 – Manutenção e Diagnóstico</title>
-
-    <link rel="stylesheet" href="../../../styles/style.css">
+        <base href="/Base-de-Conserto-Gamer/">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
     <header class="console-header">
-        <img src="../../../images/logos/ps4.png" alt="PlayStation 4">
+        <img src="images/logos/ps4.png" alt="PlayStation 4">
         <h1>PlayStation 4</h1>
         <p>
             Guia técnico de manutenção, diagnóstico e reparo do PlayStation 4,
@@ -65,7 +65,7 @@
 
         <!-- SEÇÕES -->
         <section class="console-sections">
-            <a href="desmontagem/index.html" class="card-link">
+            <a href="pages/consoles/ps4/desmontagem/index.html" class="card-link">
                 <div class="category-card">
                     <h3>🔧 Desmontagem</h3>
                     <p>Procedimentos seguros para abertura do console.</p>
@@ -116,7 +116,7 @@
     <div id="footer"></div>
 
     <script>
-        fetch("../../../components/footer.html")
+        fetch("components/footer.html")
             .then((response) => response.text())
             .then((data) => {
                 document.getElementById("footer").innerHTML = data;
