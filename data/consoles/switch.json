@@ -8,17 +8,17 @@
         {
             "name": "Nitendo Switch V1-V2",
             "image": "switch-v1-v2.png",
-            "page": "page/consoles/nitendo-switch/desmontagem/switch-v1-v2.html"
+            "page": "pages/consoles/nitendo-switch/desmontagem/switch-v1-v2.html"
         },
         {
             "name": "Nitendo Switch Lite",
             "image": "switch-lite.png",
-            "page": "page/consoles/nitendo-switch/switch-lite.html"
+            "page": "pages/consoles/nitendo-switch/desmontagem/switch-lite.html"
         },
         {
             "name": "Nitendo Switch OLED",
             "image": "switch-oled.png",
-            "page": "page/consoles/nitendo-switch/switch-oled.html"
+            "page": "pages/consoles/nitendo-switch/desmontagem/switch-oled.html"
         }
     ]
 }
