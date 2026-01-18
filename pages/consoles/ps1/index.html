@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayStation 1 – Manutenção e Diagnóstico</title>
     <base href="/Base-de-Conserto-Gamer/">
-    <link rel="stylesheet" href="../../../styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
     <header class="console-header">
-        <img src="../../../images/logos/ps1.png" alt="PlayStation 1">
+        <img src="images/logos/ps1.png" alt="PlayStation 1">
         <h1>PlayStation 1</h1>
         <p>
             Guia técnico de manutenção, diagnóstico e reparo do PlayStation 1,
@@ -58,35 +58,35 @@
 
 
         <section class="console-sections">
-            <a href="desmontagem/index.html" class="card-link">
+            <a href="pages/consoles/ps1/desmontagem/index.html" class="card-link">
                 <div class="category-card">
                     <h3>🔧 Desmontagem</h3>
                     <p>Passo a passo para abertura segura do console.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a href="components/em-desenvolvimento.html" class="card-link">
                 <div class="category-card">
                     <h3>❌ Defeitos Comuns</h3>
                     <p>Sintomas, causas e soluções mais frequentes.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a href="components/em-desenvolvimento.html" class="card-link">
                 <div class="category-card">
                     <h3>📐 Diagramas e Tensões</h3>
                     <p>Mapeamento de voltagens e sinais.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a href="components/em-desenvolvimento.html" class="card-link">
                 <div class="category-card">
                     <h3>🧪 Diagnóstico Avançado</h3>
                     <p>Testes com multímetro e análise de falhas.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a href="components/em-desenvolvimento.html" class="card-link">
                 <div class="category-card">
                     <h3>🧼 Cuidados e Prevenção</h3>
                     <p>Manutenção preventiva e boas práticas.</p>
@@ -107,7 +107,7 @@
     <div id="footer"></div>
 
     <script>
-        fetch("../../../components/footer.html")
+        fetch("components/footer.html")
             .then((response) => response.text())
             .then((data) => {
                 document.getElementById("footer").innerHTML = data;
