@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xbox 360 – Manutenção e Diagnóstico</title>
-
-    <link rel="stylesheet" href="../../../styles/style.css">
+    <base href="/Base-de-Conserto-Gamer/">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
     <header class="console-header">
-        <img src="../../../images/logos/xbox360.png" alt="Xbox 360">
+        <img src="images/logos/xbox360.png" alt="Xbox 360">
         <h1>Xbox 360</h1>
         <p>
             Guia técnico de manutenção, diagnóstico e reparo do Xbox 360,
@@ -47,28 +47,28 @@
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a href="components/em-desenvolvimento.html" class="card-link">
                 <div class="category-card">
                     <h3>❌ Defeitos Comuns</h3>
                     <p>Principais falhas como RROD e causas frequentes.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a href="components/em-desenvolvimento.html" class="card-link">
                 <div class="category-card">
                     <h3>📐 Diagramas e Tensões</h3>
                     <p>Mapeamento de voltagens e sinais da placa.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a href="components/em-desenvolvimento.html" class="card-link">
                 <div class="category-card">
                     <h3>🧪 Diagnóstico Avançado</h3>
                     <p>Análise de falhas térmicas e testes eletrônicos.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a href="components/em-desenvolvimento.html" class="card-link">
                 <div class="category-card">
                     <h3>🧼 Cuidados e Prevenção</h3>
                     <p>Limpeza interna, troca de pasta térmica e airflow.</p>
@@ -89,7 +89,7 @@
     <div id="footer"></div>
 
     <script>
-        fetch("../../../components/footer.html")
+        fetch("components/footer.html")
             .then((response) => response.text())
             .then((data) => {
                 document.getElementById("footer").innerHTML = data;
