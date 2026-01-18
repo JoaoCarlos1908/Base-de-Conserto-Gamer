@@ -1,24 +1,24 @@
 {
-    "console": "Nitendo Switch",
-    "slug": "switch",
-    "section": "Desmontagem",
-    "pageTitle": "Nitendo Switch | Desmontagem",
-    "description": "Selecione o modelo do Nitendo Switch para acessar o guia de desmontagem correspondente.",
-    "models": [
-        {
-            "name": "Nitendo Switch V1-V2",
-            "image": "switch-v1-v2.png",
-            "page": "pages/consoles/nitendo-switch/desmontagem/switch-v1-v2.html"
-        },
-        {
-            "name": "Nitendo Switch Lite",
-            "image": "switch-lite.png",
-            "page": "pages/consoles/nitendo-switch/desmontagem/switch-lite.html"
-        },
-        {
-            "name": "Nitendo Switch OLED",
-            "image": "switch-oled.png",
-            "page": "pages/consoles/nitendo-switch/desmontagem/switch-oled.html"
-        }
-    ]
+  "console": "Nintendo Switch",
+  "slug": "switch",
+  "section": "Desmontagem",
+  "pageTitle": "Nintendo Switch | Desmontagem",
+  "description": "Selecione o modelo do Nintendo Switch para acessar o guia de desmontagem correspondente.",
+  "models": [
+    {
+      "name": "Nintendo Switch V1 / V2",
+      "image": "switch-v1-v2.png",
+      "page": "pages/consoles/nintendo-switch/desmontagem/switch-v1-v2.html"
+    },
+    {
+      "name": "Nintendo Switch Lite",
+      "image": "switch-lite.png",
+      "page": "pages/consoles/nintendo-switch/desmontagem/switch-lite.html"
+    },
+    {
+      "name": "Nintendo Switch OLED",
+      "image": "switch-oled.png",
+      "page": "pages/consoles/nintendo-switch/desmontagem/switch-oled.html"
+    }
+  ]
 }
