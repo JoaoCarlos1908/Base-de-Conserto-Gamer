@@ -8,17 +8,17 @@
         {
             "name": "Xbox 360 FAT",
             "image": "xbox360-fat.png",
-            "page": "xbox360-fat.html"
+            "page": "pages/consoles/xbox360/desmontagem/xbox360-fat.html"
         },
         {
             "name": "Xbox 360 Slim",
             "image": "xbox360-slim.png",
-            "page": "xbox360-slim.html"
+            "page": "pages/consoles/xbox360/desmontagem/xbox360-slim.html"
         },
         {
             "name": "Xbox 360 E",
             "image": "xbox360-e.png",
-            "page": "xbox360-e.html"
+            "page": "pages/consoles/xbox360/desmontagem/xbox360-e.html"
         }
     ]
 }
