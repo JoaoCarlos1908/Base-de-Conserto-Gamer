@@ -8,17 +8,17 @@
         {
             "name": "PS2 FAT",
             "image": "ps2-50000.png",
-            "page": "ps2-50000.html"
+            "page": "pages/consoles/PS2/desmontagem/ps2-50000.html"
         },
         {
             "name": "PS2 Slim 70000",
             "image": "ps2-70000.png",
-            "page": "ps2-70000.html"
+            "page": ""pages/consoles/PS2/desmontagem/ps2-70000.html"
         },
         {
             "name": "PS2 Slim 90000",
             "image": "ps2-90000.png",
-            "page": "ps2-90000.html"
+            "page": ""pages/consoles/PS2/desmontagem/ps2-90000.html"
         }
     ]
 }
