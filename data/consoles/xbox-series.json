@@ -7,12 +7,12 @@
     "models": [
         {
             "name": "Xbox Series S",
-            "image": "xbox-Series-s.png",
+            "image": "xbox-series-s.png",
             "page": "pages/consoles/xbox-series/desmontagem/xbox-series-s.html"
         },
         {
             "name": "Xbox Series X",
-            "image": "xbox-Series-x.png",
+            "image": "xbox-series-x.png",
             "page": "pages/consoles/xbox-series/desmontagem/xbox-series-x.html"
         }
     ]
