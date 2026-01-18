@@ -12,12 +12,12 @@
     },
     {
       "name": "Nintendo Switch Lite",
-      "image": "images/consoles/switch-lite.png",
+      "image": "switch-lite.png",
       "page": "pages/consoles/nitendo-swicth/desmontagem/switch-lite.html"
     },
     {
       "name": "Nintendo Switch OLED",
-      "image": "images/consoles/switch-oled.png",
+      "image": "switch-oled.png",
       "page": "pages/consoles/nitendo-swicth/desmontagem/switch-oled.html"
     }
   ]
