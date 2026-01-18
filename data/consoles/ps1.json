@@ -7,13 +7,13 @@
     "models": [
         {
             "name": "PS1 FAT",
-            "image": "ps1-fat.png",
-            "page": "ps1-fat.html"
+            "image": "images/consoles/ps1-fat.png",
+            "page": "pages/consoles/ps1/desmontagem/ps1-fat.html"
         },
         {
             "name": "ps1 Slim",
-            "image": "ps1-slim.png",
-            "page": "ps1-slim.html"
+            "image": "images/consoles/ps1-slim.png",
+            "page": "pages/consoles/ps1/desmontagem/ps1-slim.html"
         }
     ]
 }
