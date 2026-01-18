@@ -1,0 +1,24 @@
+{
+    "console": "Xbox One",
+    "slug": "xbox-one",
+    "section": "Desmontagem",
+    "pageTitle": "Xbox One | Desmontagem",
+    "description": "Selecione o modelo do Xbox One para acessar o guia de desmontagem correspondente.",
+    "models": [
+        {
+            "name": "Xbox One FAT",
+            "image": "xbox-one-fat.png",
+            "page": "xbox-one-fat.html"
+        },
+        {
+            "name": "Xbox One S",
+            "image": "xbox-one-s.png",
+            "page": "xbox-one-s.html"
+        },
+        {
+            "name": "Xbox One X",
+            "image": "xbox-one-x.png",
+            "page": "xbox-one-x.html"
+        }
+    ]
+}

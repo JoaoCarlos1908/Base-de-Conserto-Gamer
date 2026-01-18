@@ -1,0 +1,19 @@
+{
+    "console": "PlayStation 1",
+    "slug": "ps1",
+    "section": "Desmontagem",
+    "pageTitle": "PlayStation 1 | Desmontagem",
+    "description": "Selecione o modelo do PlayStation 1 para acessar o guia de desmontagem correspondente.",
+    "models": [
+        {
+            "name": "PS1 FAT",
+            "image": "ps1-fat.png",
+            "page": "ps1-fat.html"
+        },
+        {
+            "name": "ps1 Slim",
+            "image": "ps1-slim.png",
+            "page": "ps1-slim.html"
+        }
+    ]
+}

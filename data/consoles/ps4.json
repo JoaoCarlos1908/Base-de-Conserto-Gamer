@@ -1,0 +1,24 @@
+{
+    "console": "PlayStation 4",
+    "slug": "ps4",
+    "section": "Desmontagem",
+    "pageTitle": "PlayStation 4 | Desmontagem",
+    "description": "Selecione o modelo do PlayStation 4 para acessar o guia de desmontagem correspondente.",
+    "models": [
+        {
+            "name": "PS4 FAT",
+            "image": "ps4-fat.png",
+            "page": "ps4-fat.html"
+        },
+        {
+            "name": "PS4 Slim",
+            "image": "ps4-slim.png",
+            "page": "ps4-slim.html"
+        },
+        {
+            "name": "PS4 Pro",
+            "image": "ps4-pro.png",
+            "page": "ps4-pro.html"
+        }
+    ]
+}

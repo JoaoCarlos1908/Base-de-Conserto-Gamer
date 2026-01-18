@@ -4,58 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlayStation 2 | Desmontagem</title>
-
+    <title>Carregando...</title>
     <link rel="stylesheet" href="../../../../styles/style.css">
 </head>
 
 <body>
 
     <header class="console-header">
-        <h1>PlayStation 2 – Desmontagem</h1>
-        <p>
-            Selecione o modelo do PlayStation 2 para acessar
-            o guia de desmontagem correspondente.
-        </p>
+        <h1 id="console-title"></h1>
+        <p id="console-description"></p>
     </header>
 
     <main>
-
-        <section class="categories">
-
-            <a href="ps2-50000.html" class="card-link">
-                <div class="category-card console-card">
-                    <img src="../../../../images/consoles/ps2-50000.png" alt="PS2 Série 50000">
-                    <h2>PS2 Série 50000</h2>
-                </div>
-            </a>
-
-            <a href="ps2-70000.html" class="card-link">
-                <div class="category-card console-card">
-                    <img src="../../../../images/consoles/ps2-70000.png" alt="PS2 Série 70000">
-                    <h2>PS2 Série 70000</h2>
-                </div>
-            </a>
-
-            <a href="ps2-90000.html" class="card-link">
-                <div class="category-card console-card">
-                    <img src="../../../../images/consoles/ps2-90000.png" alt="PS2 Série 90000">
-                    <h2>PS2 Série 90000</h2>
-                </div>
-            </a>
-
-        </section>
-
+        <section class="categories" id="models-container"></section>
     </main>
 
     <div id="footer"></div>
 
+    <script src="../../../../scripts/render-console-models.js"></script>
     <script>
-        fetch("../../../../components/footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            });
+        loadConsoleModels("ps2");
     </script>
 
 </body>

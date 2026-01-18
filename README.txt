@@ -33,20 +33,53 @@ O objetivo é reunir informações práticas e confiáveis para estudo técnico,
 
 ---
 
-## 📂 Estrutura do Projeto
-
-```
 base-conserto-gamer/
 │
-├─ index.html              # Página inicial
-├─ pages/                  # Páginas internas (por console e categoria)
-│   └─ consoles/
-│       └─ playstation2/
+├─ index.html
 │
-├─ components/             # Componentes reutilizáveis (ex: footer)
-├─ styles/                 # Arquivos CSS
-├─ images/                 # Imagens e ícones
-└─ js/                     # Scripts JavaScript
+├─ pages/
+│   └─ consoles/
+│       ├─ playstation2/
+│       │   ├─ index.html                 # Seleção de modelo (PS2)
+│       │   ├─ desmontagem.html           # Página genérica que carrega dados
+│       │   ├─ defeitos-comuns.html        # (futuro)
+│       │   └─ dados/
+│       │       ├─ models.json             # Modelos do PS2
+│       │       └─ desmontagem.json        # Conteúdo de desmontagem
+│       │
+│       ├─ xbox360/
+│       │   ├─ index.html
+│       │   ├─ desmontagem.html
+│       │   └─ dados/
+│       │       ├─ models.json
+│       │       └─ desmontagem.json
+│       │
+│       └─ xbox-classic/
+│           ├─ index.html
+│           ├─ desmontagem.html
+│           └─ dados/
+│               ├─ models.json
+│               └─ desmontagem.json
+│
+├─ components/
+│   ├─ footer.html
+│   └─ header.html             # opcional no futuro
+│
+├─ js/
+│   ├─ page-loader.js          # JS genérico (título, conteúdo, footer)
+│   └─ data-utils.js           # (opcional) helpers para leitura de JSON
+│
+├─ styles/
+│   └─ style.css
+│
+├─ images/
+│   ├─ consoles/
+│   │   ├─ ps2/
+│   │   ├─ xbox360/
+│   │   └─ xbox-classic/
+│   └─ icons/
+│
+└─ README.md
 ```
 
 ---

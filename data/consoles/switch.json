@@ -1,0 +1,24 @@
+{
+    "console": "Nitendo Switch",
+    "slug": "switch",
+    "section": "Desmontagem",
+    "pageTitle": "Nitendo Switch | Desmontagem",
+    "description": "Selecione o modelo do Nitendo Switch para acessar o guia de desmontagem correspondente.",
+    "models": [
+        {
+            "name": "Nitendo Switch V1-V2",
+            "image": "switch-v1-v2.png",
+            "page": "switch-v1-v2.html"
+        },
+        {
+            "name": "Nitendo Switch Lite",
+            "image": "switch-lite.png",
+            "page": "switch-lite.html"
+        },
+        {
+            "name": "Nitendo Switch OLED",
+            "image": "switch-oled.png",
+            "page": "switch-oled.html"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "console": "Xbox 360",
+    "slug": "Xbox360",
+    "section": "Desmontagem",
+    "pageTitle": "Xbox 360 | Desmontagem",
+    "description": "Selecione o modelo do Xbox 360 para acessar o guia de desmontagem correspondente.",
+    "models": [
+        {
+            "name": "Xbox 360 FAT",
+            "image": "xbox360-fat.png",
+            "page": "xbox360-fat.html"
+        },
+        {
+            "name": "Xbox 360 Slim",
+            "image": "xbox360-slim.png",
+            "page": "xbox360-slim.html"
+        },
+        {
+            "name": "Xbox 360 E",
+            "image": "xbox360-e.png",
+            "page": "xbox360-e.html"
+        }
+    ]
+}

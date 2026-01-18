@@ -1,0 +1,24 @@
+{
+    "console": "PlayStation 5",
+    "slug": "ps5",
+    "section": "Desmontagem",
+    "pageTitle": "PlayStation 5 | Desmontagem",
+    "description": "Selecione o modelo do PlayStation 5 para acessar o guia de desmontagem correspondente.",
+    "models": [
+        {
+            "name": "PS5 FAT",
+            "image": "ps5-fat.png",
+            "page": "ps5-fat.html"
+        },
+        {
+            "name": "PS5 Slim",
+            "image": "ps5-slim.png",
+            "page": "ps5-slim.html"
+        },
+        {
+            "name": "PS5 Pro",
+            "image": "ps5-pro.png",
+            "page": "ps5-pro.html"
+        }
+    ]
+}

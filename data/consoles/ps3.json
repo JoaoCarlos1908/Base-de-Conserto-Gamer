@@ -1,0 +1,24 @@
+{
+    "console": "PlayStation 3",
+    "slug": "ps3",
+    "section": "Desmontagem",
+    "pageTitle": "PlayStation 3 | Desmontagem",
+    "description": "Selecione o modelo do PlayStation 3 para acessar o guia de desmontagem correspondente.",
+    "models": [
+        {
+            "name": "PS3 FAT",
+            "image": "ps3-fat.png",
+            "page": "ps3-fat.html"
+        },
+        {
+            "name": "PS3 Slim",
+            "image": "ps3-slim.png",
+            "page": "ps3-slim.html"
+        },
+        {
+            "name": "PS3 Super Slim",
+            "image": "ps3-superSlim.png",
+            "page": "ps3-superSlim.html"
+        }
+    ]
+}
