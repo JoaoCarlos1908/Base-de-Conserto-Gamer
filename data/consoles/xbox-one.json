@@ -8,17 +8,17 @@
         {
             "name": "Xbox One FAT",
             "image": "xbox-one-fat.png",
-            "page": "xbox-one-fat.html"
+            "page": "pages/consoles/xbox-one/desmontagem/xbox-one-fat.html"
         },
         {
             "name": "Xbox One S",
             "image": "xbox-one-s.png",
-            "page": "xbox-one-s.html"
+            "page": "pages/consoles/xbox-one/desmontagem/xbox-one-s.html"
         },
         {
             "name": "Xbox One X",
             "image": "xbox-one-x.png",
-            "page": "xbox-one-x.html"
+            "page": "pages/consoles/xbox-one/desmontagem/xbox-one-x.html"
         }
     ]
 }
