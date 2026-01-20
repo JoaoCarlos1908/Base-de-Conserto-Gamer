@@ -4,96 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xbox Series – Manutenção e Diagnóstico</title>
-    
-    <link rel="stylesheet" href="../../../styles/style.css">
+    <title>Carregando...</title>
+
+    <base href="/Base-de-Conserto-Gamer/">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
+    <!-- 🔹 Cabeçalho preenchido via JS -->
     <header class="console-header">
-        <img src="../../../images/logos/xbox-series.png" alt="Xbox Series">
-        <h1>Xbox Series S / Series X</h1>
-        <p>
-            Guia técnico de manutenção, diagnóstico e reparo do Xbox Series,
-            voltado para estudo, manutenção preventiva e análise de falhas eletrônicas.
-        </p>
+        <img id="console-logo" src="" alt="">
+        <h1 id="console-name"></h1>
+        <p id="console-description"></p>
     </header>
 
     <main>
+
+        <!-- 🔹 Diagnóstico básico (pode ser dinâmico depois, se quiser) -->
         <section class="diagnostic-guide">
             <h2>🧠 Guia Básico de Diagnóstico</h2>
 
-            <ul>
-                <li><strong>Não liga:</strong> fonte interna, cabo de energia, standby, proteção da fonte</li>
-                <li><strong>Liga e desliga:</strong> curto na linha principal, proteção térmica, falha na PSU</li>
-                <li><strong>Sem vídeo:</strong> cabo HDMI, encoder HDMI, APU</li>
-                <li><strong>Superaquecimento:</strong> airflow comprometido, poeira, pasta térmica</li>
-                <li><strong>Desliga sozinho:</strong> falha térmica, sensor de temperatura, curto interno</li>
-                <li><strong>Erro ao inicializar:</strong> SSD NVMe, sistema corrompido, falha de firmware</li>
+            <ul id="diagnostic-list">
+                <!-- Opcionalmente preenchido por JS -->
             </ul>
 
-            <p class="tip">
-                ⚠️ Em consoles Xbox Series, falhas de alimentação e refrigeração
-                são causas comuns de desligamento por proteção.
-            </p>
+            <p class="tip" id="diagnostic-tip"></p>
         </section>
 
+        <!-- 🔹 Opções fixas (título e descrição no HTML) -->
         <section class="console-sections">
-            <a href="desmontagem/index.html" class="card-link">
+
+            <a id="link-desmontagem" href="#" class="card-link">
                 <div class="category-card">
                     <h3>🔧 Desmontagem</h3>
-                    <p>Procedimentos seguros para abertura do console.</p>
+                    <p>Passo a passo para abertura segura do console.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a id="link-defeitos" href="#" class="card-link">
                 <div class="category-card">
                     <h3>❌ Defeitos Comuns</h3>
-                    <p>Falhas recorrentes em Series S e Series X.</p>
+                    <p>Sintomas, causas e soluções mais frequentes.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a id="link-diagramas" href="#" class="card-link">
                 <div class="category-card">
                     <h3>📐 Diagramas e Tensões</h3>
-                    <p>Linhas de alimentação e sinais principais.</p>
+                    <p>Mapeamento de voltagens e sinais.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a id="link-avancado" href="#" class="card-link">
                 <div class="category-card">
                     <h3>🧪 Diagnóstico Avançado</h3>
-                    <p>Análise de APU, SSD e circuitos de proteção.</p>
+                    <p>Análises e testes eletrônicos avançados.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a id="link-cuidados" href="#" class="card-link">
                 <div class="category-card">
                     <h3>🧼 Cuidados e Prevenção</h3>
-                    <p>Limpeza interna, troca de pasta térmica e airflow.</p>
+                    <p>Manutenção preventiva e boas práticas.</p>
                 </div>
             </a>
+
         </section>
 
+        <!-- 🔹 Aviso fixo -->
         <section class="warning">
             <h3>⚠️ Aviso Importante</h3>
             <p>
                 Este conteúdo é destinado a fins educacionais.
-                Reparos eletrônicos em consoles modernos envolvem riscos
-                e podem causar danos irreversíveis se executados incorretamente.
+                Reparos eletrônicos envolvem riscos e podem causar danos
+                ao equipamento ou ao operador.
+                Execute apenas se possuir conhecimento técnico adequado.
             </p>
         </section>
+
     </main>
 
     <div id="footer"></div>
 
+    <!-- 🔹 Scripts -->
+    <script src="scripts/render-select-info.js"></script>
     <script>
-        fetch("../../../components/footer.html")
-            .then((response) => response.text())
-            .then((data) => {
-                document.getElementById("footer").innerHTML = data;
-            });
+        loadConsolePage("xbox-series");
     </script>
 
 </body>

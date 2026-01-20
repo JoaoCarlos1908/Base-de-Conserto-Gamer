@@ -1,0 +1,26 @@
+{
+    "slug": "xbox-classic",
+    "console": "Xbox Classic",
+    "pageTitle": "Xbox Classic | Base de Conserto",
+    "description": "Guia técnico de manutenção, diagnóstico e reparo do Xbox Classic, voltado para estudo, manutenção preventiva e reparos eletrônicos.",
+    "logo": "images/logos/xbox-classic.png",
+
+    "links": {
+        "desmontagem": "pages/consoles/xbox-classic/desmontagem/xbox-classic.html",
+        "defeitos": "pages/consoles/xbox-classic/defeitos/",
+        "diagramas": "pages/consoles/xbox-classic/diagramas/",
+        "avancado": "pages/consoles/xbox-classic/avancado/",
+        "cuidados": "pages/consoles/xbox-classic/cuidados/"
+    },
+
+  "diagnostic": {
+    "items": [
+      { "problem": "Não liga", "solution": "fonte de alimentação, fusível, standby, botão power" },
+      { "problem": "Liga sem imagem", "solution": "cabo AV, encoder de vídeo, GPU" },
+      { "problem": "Não lê disco", "solution": "leitor de DVD, laser, correias, flat cable" },
+      { "problem": "Desliga sozinho", "solution": "superaquecimento, pasta térmica, curto na linha 12V" },
+      { "problem": "Relógio não salva data", "solution": "capacitor do clock (Clock Cap)" }
+    ],
+    "tip": "⚠️ Sempre iniciar o diagnóstico pela fonte e verificar o capacitor do clock, comum em falhas no Xbox Classic."
+  }
+}

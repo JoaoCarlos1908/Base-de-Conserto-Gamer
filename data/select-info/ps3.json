@@ -1,0 +1,26 @@
+{
+    "slug": "ps3",
+    "console": "Play Station 3",
+    "pageTitle": "Play Station 3 | Base de Conserto",
+    "description": "Guia técnico de manutenção, diagnóstico e reparo do Play Station 3, voltado para estudo, manutenção preventiva e reparos eletrônicos.",
+    "logo": "images/logos/ps3.png",
+
+    "links": {
+        "desmontagem": "pages/consoles/ps3/desmontagem/index.html",
+        "defeitos": "pages/consoles/ps3/defeitos/",
+        "diagramas": "pages/consoles/ps3/diagramas/",
+        "avancado": "pages/consoles/ps3/avancado/",
+        "cuidados": "pages/consoles/ps3/cuidados/"
+    },
+
+  "diagnostic": {
+    "items": [
+      { "problem": "Não liga", "solution": "verificar fonte de alimentação, fusível, standby (5V), botão power e placa-mãe" },
+      { "problem": "Liga e desliga rapidamente", "solution": "curto na fonte, falha na linha de 12V, proteção da fonte ou defeito na placa-mãe" },
+      { "problem": "Liga sem imagem", "solution": "cabo HDMI/AV, CI HDMI, RSX, solda fria (YLOD em alguns modelos)" },
+      { "problem": "Não lê disco", "solution": "leitor Blu-ray, flat cables, motores, lente do laser ou placa do drive" },
+       { "problem": "Superaquecimento", "solution": "pasta térmica ressecada, poeira excessiva, cooler defeituoso ou má ventilação" }
+    ],
+    "tip": "⚠️ No PS3, problemas térmicos e falhas de solda (BGA) são causas comuns de defeitos graves."
+  }
+}

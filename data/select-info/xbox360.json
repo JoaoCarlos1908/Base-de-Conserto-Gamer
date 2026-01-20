@@ -1,0 +1,27 @@
+{
+    "slug": "xbox360",
+    "console": "Xbox 360",
+    "pageTitle": "Xbox 360 | Base de Conserto",
+    "description": "Guia técnico de manutenção, diagnóstico e reparo do Xbox 360, voltado para estudo, manutenção preventiva e reparos eletrônicos.",
+    "logo": "images/logos/xbox360.png",
+
+    "links": {
+        "desmontagem": "pages/consoles/xbox360/desmontagem/index.html",
+        "defeitos": "pages/consoles/xbox360/defeitos/",
+        "diagramas": "pages/consoles/xbox360/diagramas/",
+        "avancado": "pages/consoles/xbox360/avancado/",
+        "cuidados": "pages/consoles/xbox360/cuidados/"
+    },
+
+  "diagnostic": {
+    "items": [
+      { "problem": "Não liga", "solution": "fonte externa, cabo de energia, botão power" },
+      { "problem": "Liga e desliga", "solution": "curto na placa, falha na fonte, proteção térmica" },
+      { "problem": "Sem vídeo", "solution": "cabo HDMI/AV, ANA/HANA, GPU" },
+      { "problem": "Trava ou reinicia", "solution": "superaquecimento, pasta térmica, falha na GPU/CPU" },
+      { "problem": "Erro de luz vermelha", "solution": "falha de hardware (RROD)" },
+      { "problem": "Não lê disco", "solution": "leitor de DVD, laser, flat cable" }
+    ],
+    "tip": "⚠️ Verifique sempre a ventilação, dissipadores e histórico de superaquecimento do console."
+  }
+}

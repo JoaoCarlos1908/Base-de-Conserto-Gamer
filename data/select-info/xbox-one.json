@@ -1,0 +1,27 @@
+{
+    "slug": "xbox-one",
+    "console": "Xbox One",
+    "pageTitle": "Xbox One | Base de Conserto",
+    "description": "Guia técnico de manutenção, diagnóstico e reparo do Xbox One, voltado para estudo, manutenção preventiva e reparos eletrônicos.",
+    "logo": "images/logos/xbox-one.png",
+
+    "links": {
+        "desmontagem": "pages/consoles/xbox-one/desmontagem/index.html",
+        "defeitos": "pages/consoles/xbox-one/defeitos/",
+        "diagramas": "pages/consoles/xbox-one/diagramas/",
+        "avancado": "pages/consoles/xbox-one/avancado/",
+        "cuidados": "pages/consoles/xbox-one/cuidados/"
+    },
+
+  "diagnostic": {
+    "items": [
+      { "problem": "Não liga", "solution": "fonte externa/interna, cabo de energia, botão power" },
+      { "problem": "Liga e desliga", "solution": "curto na placa, falha na fonte, proteção térmica" },
+      { "problem": "Sem vídeo", "solution": "cabo HDMI, porta HDMI, CI retimer" },
+      { "problem": "Desliga durante o uso", "solution": "superaquecimento, pasta térmica, fan" },
+      { "problem": "Congela ou trava", "solution": "falha de HD, sistema corrompido, aquecimento" },
+      { "problem": "Não lê disco", "solution": "leitor Blu-ray, laser, flat cable" }
+    ],
+    "tip": "⚠️ No Xbox One, falhas na porta HDMI e no HD estão entre os problemas mais comuns."
+  }
+}

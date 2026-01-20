@@ -1,0 +1,26 @@
+{
+    "slug": "ps4",
+    "console": "Play Station 4",
+    "pageTitle": "Play Station 4 | Base de Conserto",
+    "description": "Guia técnico de manutenção, diagnóstico e reparo do Play Station 4, voltado para estudo, manutenção preventiva e reparos eletrônicos.",
+    "logo": "images/logos/ps4.png",
+
+    "links": {
+        "desmontagem": "pages/consoles/ps4/desmontagem/index.html",
+        "defeitos": "pages/consoles/ps4/defeitos/",
+        "diagramas": "pages/consoles/ps4/diagramas/",
+        "avancado": "pages/consoles/ps4/avancado/",
+        "cuidados": "pages/consoles/ps4/cuidados/"
+    },
+
+  "diagnostic": {
+    "items": [
+      { "problem": "Não liga", "solution": "verificar fonte de alimentação, linha standby 5V, fusível, MOSFETs e circuito PFC" },
+      { "problem": "Liga e desliga rapidamente", "solution": "curto nas linhas de alimentação, APU, falha na fonte ou superaquecimento" },
+      { "problem": "Liga sem imagem", "solution": "cabo HDMI, filtro HDMI, CI HDMI, solda BGA da APU" },
+      { "problem": "Não lê disco", "solution": "unidade Blu-ray, flat do drive, motor do disco ou laser" },
+       { "problem": "Superaquecimento", "solution": "pasta térmica ressecada, cooler com falha, dissipador obstruído" }
+    ],
+    "tip": "⚠️ No PS4, problemas térmicos e falhas de solda (BGA) são causas comuns de defeitos graves."
+  }
+}

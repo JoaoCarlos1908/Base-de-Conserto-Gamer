@@ -1,0 +1,26 @@
+{
+    "slug": "switch",
+    "console": "Nintendo Switch",
+    "pageTitle": "Nintendo Switch | Base de Conserto",
+    "description": "Guia técnico de manutenção, diagnóstico e reparo do Nintendo Switch, voltado para estudo, manutenção preventiva e reparos eletrônicos.",
+    "logo": "images/logos/switch.png",
+
+    "links": {
+        "desmontagem": "pages/consoles/nintendo-switch/desmontagem/index.html",
+        "defeitos": "pages/consoles/nintendo-switch/defeitos/",
+        "diagramas": "pages/consoles/nintendo-switch/diagramas/",
+        "avancado": "pages/consoles/nintendo-switch/avancado/",
+        "cuidados": "pages/consoles/nintendo-switch/cuidados/"
+    },
+
+  "diagnostic": {
+    "items": [
+      { "problem": "Não liga", "solution": "verificar bateria, conector USB-C, CI de carga (M92T36 / BQ)" },
+      { "problem": "Não carrega", "solution": "porta USB-C, circuito de proteção, linha VBAT" },
+      { "problem": "Liga sem imagem", "solution": "display, flat da tela, backlight, CI P13USB" },
+      { "problem": "Superaquecimento", "solution": "dissipador, pasta térmica, cooler" },
+      { "problem": "Joy-Con não conecta", "solution": "trilhas laterais, flat do trilho, firmware" }
+    ],
+    "tip": "⚠️ Sempre iniciar o diagnóstico pela bateria e circuito de carga antes de prosseguir."
+  }
+}

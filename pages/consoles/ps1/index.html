@@ -4,114 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlayStation 1 – Manutenção e Diagnóstico</title>
+    <title>Carregando...</title>
+
     <base href="/Base-de-Conserto-Gamer/">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
+    <!-- 🔹 Cabeçalho preenchido via JS -->
     <header class="console-header">
-        <img src="images/logos/ps1.png" alt="PlayStation 1">
-        <h1>PlayStation 1</h1>
-        <p>
-            Guia técnico de manutenção, diagnóstico e reparo do PlayStation 1,
-            voltado para estudo, manutenção preventiva e reparos eletrônicos.
-        </p>
+        <img id="console-logo" src="" alt="">
+        <h1 id="console-name"></h1>
+        <p id="console-description"></p>
     </header>
 
     <main>
+
+        <!-- 🔹 Diagnóstico básico (pode ser dinâmico depois, se quiser) -->
         <section class="diagnostic-guide">
             <h2>🧠 Guia Básico de Diagnóstico</h2>
 
-            <ul>
-                <li><strong>Não liga:</strong>verificar fonte externa (PSOne)
-                     ou fonte interna (FAT),
-                    fusível, regulador de tensão e chave liga/desliga</li>
-                    
-                <li><strong>Liga sem imagem:</strong>
-                    cabo AV, soldas frias no conector AV,
-                    CI de vídeo e cristal oscilador
-                </li>
-
-                <li><strong>Não lê disco:</strong>
-                    laser gasto, trilho do leitor sujo,
-                    motor do spindle, flat do leitor e regulagem do laser
-                </li>
-
-                <li><strong>Leitura intermitente:</strong>
-                    lente suja, laser fraco,
-                    soldas frias na placa do leitor
-                </li>
-
-                <li><strong>Sem áudio:</strong>
-                    cabo AV, trilhas rompidas,
-                    CI de áudio e capacitores eletrolíticos
-                </li>
+            <ul id="diagnostic-list">
+                <!-- Opcionalmente preenchido por JS -->
             </ul>
 
-            <p class="tip">
-                ⚠️ No PlayStation 1, problemas de leitura geralmente estão
-                relacionados ao desgaste natural do laser e soldas frias.
-            </p>
+            <p class="tip" id="diagnostic-tip"></p>
         </section>
 
-
+        <!-- 🔹 Opções fixas (título e descrição no HTML) -->
         <section class="console-sections">
-            <a href="pages/consoles/ps1/desmontagem/index.html" class="card-link">
+
+            <a id="link-desmontagem" href="#" class="card-link">
                 <div class="category-card">
                     <h3>🔧 Desmontagem</h3>
                     <p>Passo a passo para abertura segura do console.</p>
                 </div>
             </a>
 
-            <a href="components/em-desenvolvimento.html" class="card-link">
+            <a id="link-defeitos" href="#" class="card-link">
                 <div class="category-card">
                     <h3>❌ Defeitos Comuns</h3>
                     <p>Sintomas, causas e soluções mais frequentes.</p>
                 </div>
             </a>
 
-            <a href="components/em-desenvolvimento.html" class="card-link">
+            <a id="link-diagramas" href="#" class="card-link">
                 <div class="category-card">
                     <h3>📐 Diagramas e Tensões</h3>
                     <p>Mapeamento de voltagens e sinais.</p>
                 </div>
             </a>
 
-            <a href="components/em-desenvolvimento.html" class="card-link">
+            <a id="link-avancado" href="#" class="card-link">
                 <div class="category-card">
                     <h3>🧪 Diagnóstico Avançado</h3>
-                    <p>Testes com multímetro e análise de falhas.</p>
+                    <p>Análises e testes eletrônicos avançados.</p>
                 </div>
             </a>
 
-            <a href="components/em-desenvolvimento.html" class="card-link">
+            <a id="link-cuidados" href="#" class="card-link">
                 <div class="category-card">
                     <h3>🧼 Cuidados e Prevenção</h3>
                     <p>Manutenção preventiva e boas práticas.</p>
                 </div>
             </a>
+
         </section>
 
+        <!-- 🔹 Aviso fixo -->
         <section class="warning">
             <h3>⚠️ Aviso Importante</h3>
             <p>
                 Este conteúdo é destinado a fins educacionais.
-                Reparos eletrônicos envolvem riscos. Execute apenas
-                se possuir conhecimento técnico adequado.
+                Reparos eletrônicos envolvem riscos e podem causar danos
+                ao equipamento ou ao operador.
+                Execute apenas se possuir conhecimento técnico adequado.
             </p>
         </section>
+
     </main>
 
     <div id="footer"></div>
 
+    <!-- 🔹 Scripts -->
+    <script src="scripts/render-select-info.js"></script>
     <script>
-        fetch("components/footer.html")
-            .then((response) => response.text())
-            .then((data) => {
-                document.getElementById("footer").innerHTML = data;
-            });
+        loadConsolePage("ps1");
     </script>
 
 </body>

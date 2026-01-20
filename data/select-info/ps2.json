@@ -1,0 +1,25 @@
+{
+    "slug": "ps2",
+    "console": "Play Station 2",
+    "pageTitle": "Play Station 2 | Base de Conserto",
+    "description": "Guia técnico de manutenção, diagnóstico e reparo do Play Station 2, voltado para estudo, manutenção preventiva e reparos eletrônicos.",
+    "logo": "images/logos/ps2.png",
+
+    "links": {
+        "desmontagem": "pages/consoles/ps2/desmontagem/index.html",
+        "defeitos": "pages/consoles/ps2/defeitos/",
+        "diagramas": "pages/consoles/ps2/diagramas/",
+        "avancado": "pages/consoles/ps2/avancado/",
+        "cuidados": "pages/consoles/ps2/cuidados/"
+    },
+
+  "diagnostic": {
+    "items": [
+      { "problem": "Não liga", "solution": "verificar fonte, fusível, standby e chave liga/desliga" },
+      { "problem": "Liga sem imagem", "solution": "cabo AV, CI de vídeo, BA chip" },
+      { "problem": "Não lê disco", "solution": " laser, flat do leitor, motores, regulagem" },
+      { "problem": "Desliga sozinho", "solution": "superaquecimento, curto na linha 12V" }
+    ],
+    "tip": "⚠️ Sempre iniciar o diagnóstico pela fonte e alimentação primária."
+  }
+}

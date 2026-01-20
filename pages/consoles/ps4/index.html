@@ -4,123 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlayStation 4 – Manutenção e Diagnóstico</title>
-        <base href="/Base-de-Conserto-Gamer/">
+    <title>Carregando...</title>
+
+    <base href="/Base-de-Conserto-Gamer/">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
+    <!-- 🔹 Cabeçalho preenchido via JS -->
     <header class="console-header">
-        <img src="images/logos/ps4.png" alt="PlayStation 4">
-        <h1>PlayStation 4</h1>
-        <p>
-            Guia técnico de manutenção, diagnóstico e reparo do PlayStation 4,
-            com foco em estudo, manutenção preventiva e reparos eletrônicos.
-        </p>
+        <img id="console-logo" src="" alt="">
+        <h1 id="console-name"></h1>
+        <p id="console-description"></p>
     </header>
 
     <main>
-        <!-- GUIA DE DIAGNÓSTICO -->
+
+        <!-- 🔹 Diagnóstico básico (pode ser dinâmico depois, se quiser) -->
         <section class="diagnostic-guide">
             <h2>🧠 Guia Básico de Diagnóstico</h2>
 
-            <ul>
-                <li>
-                    <strong>Não liga:</strong>
-                    verificar fonte de alimentação, linha standby 5V,
-                    fusível, MOSFETs e circuito PFC
-                </li>
-
-                <li>
-                    <strong>Liga e desliga rapidamente:</strong>
-                    curto nas linhas de alimentação, APU,
-                    falha na fonte ou superaquecimento
-                </li>
-
-                <li>
-                    <strong>Liga sem imagem:</strong>
-                    cabo HDMI, filtro HDMI, CI HDMI,
-                    solda BGA da APU
-                </li>
-
-                <li>
-                    <strong>Superaquecimento:</strong>
-                    pasta térmica ressecada,
-                    cooler com falha, dissipador obstruído
-                </li>
-
-                <li>
-                    <strong>Não lê disco:</strong>
-                    unidade Blu-ray, flat do drive,
-                    motor do disco ou laser
-                </li>
+            <ul id="diagnostic-list">
+                <!-- Opcionalmente preenchido por JS -->
             </ul>
 
-            <p class="tip">
-                ⚠️ No PS4, falhas de vídeo e desligamento estão frequentemente
-                relacionadas à APU, fonte ou superaquecimento.
-            </p>
+            <p class="tip" id="diagnostic-tip"></p>
         </section>
 
-        <!-- SEÇÕES -->
+        <!-- 🔹 Opções fixas (título e descrição no HTML) -->
         <section class="console-sections">
-            <a href="pages/consoles/ps4/desmontagem/index.html" class="card-link">
+
+            <a id="link-desmontagem" href="#" class="card-link">
                 <div class="category-card">
                     <h3>🔧 Desmontagem</h3>
-                    <p>Procedimentos seguros para abertura do console.</p>
+                    <p>Passo a passo para abertura segura do console.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a id="link-defeitos" href="#" class="card-link">
                 <div class="category-card">
                     <h3>❌ Defeitos Comuns</h3>
-                    <p>Principais falhas do PS4 e suas causas.</p>
+                    <p>Sintomas, causas e soluções mais frequentes.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a id="link-diagramas" href="#" class="card-link">
                 <div class="category-card">
                     <h3>📐 Diagramas e Tensões</h3>
-                    <p>Mapeamento de linhas, tensões e sinais.</p>
+                    <p>Mapeamento de voltagens e sinais.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a id="link-avancado" href="#" class="card-link">
                 <div class="category-card">
                     <h3>🧪 Diagnóstico Avançado</h3>
-                    <p>Análise com multímetro, fonte assimétrica e termovisor.</p>
+                    <p>Análises e testes eletrônicos avançados.</p>
                 </div>
             </a>
 
-            <a href="../../../components/em-desenvolvimento.html" class="card-link">
+            <a id="link-cuidados" href="#" class="card-link">
                 <div class="category-card">
                     <h3>🧼 Cuidados e Prevenção</h3>
-                    <p>Limpeza interna, troca de pasta térmica e boas práticas.</p>
+                    <p>Manutenção preventiva e boas práticas.</p>
                 </div>
             </a>
+
         </section>
 
-        <!-- AVISO -->
+        <!-- 🔹 Aviso fixo -->
         <section class="warning">
             <h3>⚠️ Aviso Importante</h3>
             <p>
-                Este conteúdo é destinado exclusivamente a fins educacionais.
-                Reparos em consoles modernos envolvem riscos elevados e
-                procedimentos avançados. Execute apenas se possuir
-                conhecimento técnico adequado.
+                Este conteúdo é destinado a fins educacionais.
+                Reparos eletrônicos envolvem riscos e podem causar danos
+                ao equipamento ou ao operador.
+                Execute apenas se possuir conhecimento técnico adequado.
             </p>
         </section>
+
     </main>
 
     <div id="footer"></div>
 
+    <!-- 🔹 Scripts -->
+    <script src="scripts/render-select-info.js"></script>
     <script>
-        fetch("components/footer.html")
-            .then((response) => response.text())
-            .then((data) => {
-                document.getElementById("footer").innerHTML = data;
-            });
+        loadConsolePage("ps4");
     </script>
 
 </body>

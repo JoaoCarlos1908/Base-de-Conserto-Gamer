@@ -1,0 +1,27 @@
+{
+    "slug": "xbox-series",
+    "console": "Xbox Series",
+    "pageTitle": "Xbox Series | Base de Conserto",
+    "description": "Guia técnico de manutenção, diagnóstico e reparo do Xbox Series, voltado para estudo, manutenção preventiva e reparos eletrônicos.",
+    "logo": "images/logos/xbox-series.png",
+
+    "links": {
+        "desmontagem": "pages/consoles/xbox-series/desmontagem/index.html",
+        "defeitos": "pages/consoles/xbox-series/defeitos/",
+        "diagramas": "pages/consoles/xbox-series/diagramas/",
+        "avancado": "pages/consoles/xbox-series/avancado/",
+        "cuidados": "pages/consoles/xbox-series/cuidados/"
+    },
+
+  "diagnostic": {
+    "items": [
+      { "problem": "Não liga", "solution": "fonte interna, cabo de energia, standby, proteção da fonte" },
+      { "problem": "Liga e desliga", "solution": "curto na linha principal, proteção térmica, falha na PSU" },
+      { "problem": "Sem vídeo", "solution": "cabo HDMI, encoder HDMI, APU" },
+      { "problem": "Superaquecimento", "solution": "airflow comprometido, poeira, pasta térmica" },
+      { "problem": "Desliga sozinho", "solution": "falha térmica, sensor de temperatura, curto interno" },
+      { "problem": "Erro ao inicializar", "solution": "SSD NVMe, sistema corrompido, falha de firmware" }
+    ],
+    "tip": "⚠️ Em consoles Xbox Series, falhas de alimentação e refrigeração são causas comuns de desligamento por proteção."
+  }
+}

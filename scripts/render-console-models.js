@@ -10,7 +10,7 @@ async function loadFooter() {
 
 async function loadConsoleModels(consoleId) {
     try {
-        const response = await fetch(`data/consoles/${consoleId}.json`);
+        const response = await fetch(`data/modelos-consoles/${consoleId}.json`);
         const data = await response.json();
 
         // 🔹 Título da aba

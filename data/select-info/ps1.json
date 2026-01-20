@@ -1,0 +1,26 @@
+{
+    "slug": "ps1",
+    "console": "Play Station 1",
+    "pageTitle": "Play Station 1 | Base de Conserto",
+    "description": "Guia técnico de manutenção, diagnóstico e reparo do Play Station 1, voltado para estudo, manutenção preventiva e reparos eletrônicos.",
+    "logo": "images/logos/ps1.png",
+
+    "links": {
+        "desmontagem": "pages/consoles/ps1/desmontagem/index.html",
+        "defeitos": "pages/consoles/ps1/defeitos/",
+        "diagramas": "pages/consoles/ps1/diagramas/",
+        "avancado": "pages/consoles/ps1/avancado/",
+        "cuidados": "pages/consoles/ps1/cuidados/"
+    },
+
+  "diagnostic": {
+    "items": [
+      { "problem": "Não liga", "solution": "verificar fonte externa (PSOne) ou fonte interna (FAT), fusível, regulador de tensão e chave liga/desliga" },
+      { "problem": "Liga sem imagem", "solution": "cabo AV, soldas frias no conector AV, CI de vídeo e cristal oscilador" },
+      { "problem": "Não lê disco", "solution": " laser gasto, trilho do leitor sujo, motor do spindle, flat do leitor e regulagem do laser" },
+      { "problem": "Leitura intermitente", "solution": "lente suja, laser fraco, soldas frias na placa do leitor" },
+      { "problem": "Sem Áudio", "solution": "cabo AV, trilhas rompidas, CI de áudio e capacitores eletrolíticos" }
+    ],
+    "tip": "⚠️ No PlayStation 1, problemas de leitura geralmente estão relacionados ao desgaste natural do laser e soldas frias."
+  }
+}

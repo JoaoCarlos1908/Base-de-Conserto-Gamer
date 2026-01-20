@@ -1,0 +1,26 @@
+{
+    "slug": "ps5",
+    "console": "Play Station 5",
+    "pageTitle": "Play Station 5 | Base de Conserto",
+    "description": "Guia técnico de manutenção, diagnóstico e reparo do Play Station 5, voltado para estudo, manutenção preventiva e reparos eletrônicos.",
+    "logo": "images/logos/ps5.png",
+
+    "links": {
+        "desmontagem": "pages/consoles/ps5/desmontagem/index.html",
+        "defeitos": "pages/consoles/ps5/defeitos/",
+        "diagramas": "pages/consoles/ps5/diagramas/",
+        "avancado": "pages/consoles/ps5/avancado/",
+        "cuidados": "pages/consoles/ps5/cuidados/"
+    },
+
+  "diagnostic": {
+    "items": [
+      { "problem": "Não liga", "solution": "verificar fonte de alimentação, linha standby 5V, fusível primário, MOSFETs, circuito PFC e placa de potência" },
+      { "problem": "Liga e desliga rapidamente", "solution": "curto nas linhas de alimentação, falha na fonte, proteção térmica ou problema na APU" },
+      { "problem": "Liga sem imagem", "solution": " cabo HDMI, filtro ESD HDMI, CI HDMI, solda BGA da APU ou falha na linha de vídeo" },
+      { "problem": "Não lê disco", "solution": "unidade Blu-ray, flat do drive, motor do disco ou defeito no conjunto óptico" },
+       { "problem": "Superaquecimento", "solution": "metal líquido mal distribuído, vedação do dissipador comprometida, cooler com falha ou obstrução do sistema de ventilação" }
+    ],
+    "tip": "⚠️ No PS5, falhas de desligamento e superaquecimento estão frequentemente relacionadas à dissipação térmica, vedação do metal líquido e proteção da fonte."
+  }
+}
