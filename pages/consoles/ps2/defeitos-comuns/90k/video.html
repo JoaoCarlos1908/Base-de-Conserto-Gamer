@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS2 | Vídeo e Imagem – Sem imagem / Tela preta</title>
+    <base href="/Base-de-Conserto-Gamer/">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="page-header">
+        <h1>🎮 Vídeo e Imagem – Sem imagem, tela preta, falhas gráficas</h1>
+        <p class="page-description">
+            Diagnóstico técnico para PlayStation 2 Slim com falha de vídeo,
+            ausência de imagem, tela preta ou artefatos gráficos.
+        </p>
+    </header>
+
+    <main class="content">
+
+        <!-- SINTOMA -->
+        <section class="info-section">
+            <h2>📌 Sintoma</h2>
+            <ul>
+                <li>Console liga, mas não apresenta imagem</li>
+                <li>Tela preta mesmo com o console ligado</li>
+                <li>Falhas gráficas, travamentos ou imagem instável</li>
+            </ul>
+        </section>
+
+        <section class="defect-page">
+
+            <!-- CASO ESPECÍFICO -->
+            <section class="defect-step">
+                <h2>🖥️ Caso específico – Liga e fica com tela preta</h2>
+
+                <p>
+                    Quando o console liga, mas permanece com tela preta,
+                    o defeito mais comum está relacionado ao <strong>chip de desbloqueio</strong>.
+                </p>
+
+                <p>
+                    Um teste simples é ligar o console e manter o botão
+                    pressionado por cerca de <strong>2 segundos</strong>, soltando antes do reinício.
+                </p>
+
+                <p>
+                    Outra alternativa é remover temporariamente a alimentação do chip de desbloqueio.
+                </p>
+            </section>
+
+            <!-- ETAPA 1 -->
+            <section class="defect-step">
+                <h2>🔎 Etapa 1 – Verificação inicial da alimentação</h2>
+
+                <p>
+                    Antes de qualquer análise mais profunda, comece verificando os fusíveis <strong>PS</strong> da
+                    placa.
+                    Fusíveis abertos podem impedir o funcionamento correto da região de vídeo.
+                </p>
+
+                <div class="image-placeholder">
+                    <a href="images/componentes/ps2/90k/fusiveis-PS.png" data-zoom>
+                        <img src="images/componentes/ps2/90k/fusiveis-PS.png"
+                            alt="Localização dos fusíveis PS na placa">
+                    </a>
+                    <p>📷 IMAGEM – Localização dos fusíveis PS na placa</p>
+                </div>
+
+                <p>
+                    Caso o console ligue, mas não apresente imagem, observe a <strong>saída de áudio óptico</strong>.
+                    Se a luz do áudio óptico não acender, isso indica um possível problema de alimentação,
+                    geralmente concentrado na região do <strong>PWM</strong> e nos capacitores associados.
+                </p>
+            </section>
+
+            <!-- ETAPA 2 -->
+            <section class="defect-step">
+                <h2>⚡ Etapa 2 – Verificação da linha de 1.8V</h2>
+
+                <p>
+                    Um dos defeitos mais recorrentes nesse sintoma é a ausência da tensão de <strong>1.8V</strong>.
+                    Essa tensão pode ser medida em um capacitor próximo à região de saída de vídeo.
+                </p>
+
+                <p>
+                    Se a tensão de 1.8V não estiver presente, não avance para outros testes ainda.
+                    Esse problema pode estar relacionado a trilhas rompidas ou resistores defeituosos
+                    ao longo dessa linha.
+                </p>
+
+                <div class="image-placeholder">
+                    <a href="images/componentes/ps2/90k/tensao-capacitor-video.png" data-zoom>
+                        <img src="images/componentes/ps2/90k/tensao-capacitor-video.png"
+                            alt="Localização dos fusíveis PS na placa">
+                    </a>
+                    <p>📷 IMAGEM – Tensão de capacitores resposanveis por video.</p>
+                </div>
+
+            </section>
+
+            <!-- ETAPA 3 - BLOCO 103 -->
+            <section class="defect-step highlight-step">
+                <h2>🧩 Etapa 3 – Bloco de resistores 103 (PONTO CRÍTICO)</h2>
+
+                <p>
+                    Com as tensões do PWM aparentemente corretas, o próximo ponto de verificação
+                    deve ser o <strong>bloco de resistores identificado como “103”</strong>.
+                </p>
+
+                <p>
+                    Esse bloco é responsável pela distribuição correta das tensões,
+                    principalmente a linha de <strong>3.4V</strong>.
+                    Todos os resistores desse conjunto devem apresentar continuidade
+                    e não podem estar abertos.
+                </p>
+
+                <div class="image-placeholder">
+                    <a href="images/componentes/ps2/90k/bloco_resistores103.png" data-zoom>
+                        <img src="images/componentes/ps2/90k/bloco_resistores103.png"
+                            alt="Bloco de resistores 103 do PS2 Slim">
+                    </a>
+                    <p>📷 IMAGEM – Localização do bloco de resistores 103</p>
+                </div>
+
+                <p>
+                    Caso algum resistor esteja aberto ou sem a tensão esperada,
+                    esse defeito deve ser corrigido antes de seguir adiante,
+                    pois ele pode sozinho causar a ausência total de vídeo.
+                </p>
+            </section>
+
+            <!-- ETAPA 4 -->
+            <section class="defect-step">
+                <h2>🔌 Etapa 4 – MOSFET e bobina da alimentação</h2>
+
+                <p>
+                    Se o bloco de resistores estiver correto, o próximo passo é verificar
+                    o <strong>MOSFET localizado abaixo da bobina</strong>, próximo à alimentação.
+                </p>
+
+                <p>
+                    Meça a tensão diretamente na bobina.
+                    O valor esperado é aproximadamente <strong>3.4V</strong>.
+                </p>
+
+                <div class="image-placeholder">
+                    <a href="images/componentes/ps2/90k/mosfet-alimentacao.png" data-zoom>
+                        <img src="images/componentes/ps2/90k/mosfet-alimentacao.png"
+                            alt="Mosfet resposável pela tensão de 3.4v">
+                    </a>
+                    <p>📷 IMAGEM – Mosfet resposável pela tensão de 3.4v</p>
+                </div>
+
+                <p>
+                    Se essa tensão não estiver presente, refaça primeiramente a solda do MOSFET.
+                    É comum ocorrer solda fria devido à sujeira ou oxidação.
+                </p>
+
+                <p>
+                    Caso a tensão continue ausente após a ressolda,
+                    será necessário substituir o MOSFET para confirmar o defeito.
+                </p>
+            </section>
+
+            <!-- ETAPA 5 -->
+            <section class="defect-step">
+                <h2>🧠 Etapa 5 – CI de imagem e PWM</h2>
+
+                <p>
+                    Com as tensões principais corretas, verifique o <strong>CI de imagem</strong>,
+                    localizado próximo ao cristal.
+                    Ele deve apresentar as tensões de <strong>1.8V</strong> e <strong>3.5V</strong>.
+                    Caso elas estejam em falta será necessário realizar a troca do componente.
+                </p>
+
+                <div class="image-placeholder">
+                    <a href="images/diagramas/ps2/90k/ci-imagem.png" data-zoom>
+                        <img src="images/diagramas/ps2/90k/ci-imagem.png"
+                            alt="Localização e tensões do CI de Imagem">
+                    </a>
+                    <p>📷 IMAGEM – Localização e tensões do CI de Imagem</p>
+                </div>
+
+                <p>
+                    Caso a tensão de 1.8V não esteja presente diretamente no PWM,
+                    mesmo com as demais tensões normais,
+                    pode haver solda fria ou oxidação no próprio PWM,
+                    sendo necessário refazer sua soldagem. Se todas as tensões estiverem em falata será
+                    necessário a substituição do componente.
+                </p>
+
+                <div class="image-placeholder">
+                    <a href="images/diagramas/ps2/90k/tensoes-pwm.png" data-zoom>
+                        <img src="images/diagramas/ps2/90k/tensoes-pwm.png"
+                            alt="Tensões correspondentes ao PWM">
+                    </a>
+                    <p>📷 IMAGEM – Tensões correspondentes ao PWM</p>
+                </div>
+            </section>
+
+            <!-- ETAPA 6 -->
+            <section class="defect-step">
+                <h2>⚠️ Etapa 6 – Processador (último recurso)</h2>
+
+                <p>
+                    Se todos os testes anteriores estiverem corretos,
+                    o defeito pode estar relacionado à solda do processador.
+                </p>
+
+                <p>
+                    Uma forma de diagnóstico (somente em último caso)
+                    é pressionar o processador com firmeza enquanto liga o console,
+                    tentando restabelecer temporariamente os contatos.
+                </p>
+
+                <p class="warning">
+                    ⚠️ Se o console ligar normalmente dessa forma,
+                    o problema provavelmente é reballing.
+                    Esse método deve ser usado apenas para diagnóstico,
+                    pois pode causar danos adicionais à placa.
+                </p>
+
+                <p>
+                    Consoles que travam durante o uso também podem apresentar
+                    esse mesmo problema de solda no processador.
+                </p>
+            </section>
+
+        </section>
+
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("components/footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+
+</body>
+
+</html>

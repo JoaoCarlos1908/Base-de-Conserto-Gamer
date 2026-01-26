@@ -7,7 +7,7 @@
 
     "links": {
         "desmontagem": "pages/consoles/ps2/desmontagem/index.html",
-        "defeitos": "pages/consoles/ps2/defeitos/",
+        "defeitos": "pages/consoles/ps2/defeitos-comuns/index.html",
         "diagramas": "pages/consoles/ps2/diagramas/",
         "avancado": "pages/consoles/ps2/avancado/",
         "cuidados": "pages/consoles/ps2/cuidados/"

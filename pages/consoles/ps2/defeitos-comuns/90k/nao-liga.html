@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS2 | Não liga – LED apagado</title>
+    <base href="/Base-de-Conserto-Gamer/">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="page-header">
+        <h1>❌ Não liga – LED apagado / sem sinal</h1>
+        <p class="page-description">
+            Diagnóstico técnico para PlayStation 2 completamente inoperante,
+            sem LED aceso ou qualquer resposta ao pressionar o botão power.
+        </p>
+    </header>
+
+    <main class="content">
+
+        <!-- SINTOMA -->
+        <section class="info-section">
+            <h2>📌 Sintoma</h2>
+            <p>
+                Console não apresenta qualquer sinal de funcionamento.
+                LED permanece apagado e não há resposta ao botão power.
+            </p>
+        </section>
+
+        <!-- DIAGNÓSTICO INICIAL -->
+        <section class="info-section">
+            <h2>🔎 Diagnóstico Inicial</h2>
+
+            <ul>
+                <li>Testar o cabo de energia</li>
+                <li>Substituir por outro cabo compatível</li>
+                <li>Verificar com multímetro se há energia chegando à ponta do cabo</li>
+            </ul>
+        </section>
+
+        <!-- FONTE -->
+        <section class="info-section">
+            <h2>⚡ Fonte de Alimentação</h2>
+
+            <p>
+                Caso o cabo esteja funcionando corretamente, o próximo passo
+                é verificar a fonte de alimentação do console.
+            </p>
+
+            <ul>
+                <li><strong>PS2 Slim:</strong> 8.5V</li>
+                <li><strong>PS2 Fat:</strong> 12V</li>
+                <li>Medição feita com multímetro em voltagem contínua (DC)</li>
+            </ul>
+        </section>
+
+        <!-- FUSÍVEIS -->
+        <section class="info-section">
+            <h2>🧯 Fusíveis da Placa</h2>
+
+            <p>
+                Se a fonte estiver correta, deve-se verificar os fusíveis da placa.
+                Eles são identificados pela nomenclatura <strong>PS</strong>
+                seguida de um número (geralmente de PS1 a PS17).
+            </p>
+
+            <p>
+                Esses fusíveis ficam localizados na parte inferior da placa.
+                No modelo Slim 90K são um total de 7 fusiveis.
+            </p>
+
+            <!-- IMAGEM -->
+            <div class="image-placeholder">
+                <a href="images/componentes/ps2/90k/fusiveis-PS.png" data-zoom>
+                    <img src="images/componentes/ps2/90k/fusiveis-PS.png" alt="Localização dos fusíveis PS na placa">
+                </a>
+                <p>📷 IMAGEM – Localização dos fusíveis PS na placa</p>
+            </div>
+
+            <p>
+                O teste é feito com multímetro na escala de continuidade.
+            </p>
+
+            <ul>
+                <li>Fusível bom: baixa resistência (~0000) ou sinal sonoro</li>
+                <li>Fusível aberto: sem continuidade e sem sinal sonoro</li>
+            </ul>
+
+            <p>
+                ⚠️ É possível realizar um <strong>jumper temporário</strong>
+                apenas para teste e confirmação do defeito.
+            </p>
+        </section>
+
+        <!-- PWM -->
+        <section class="info-section">
+            <h2>🔥 PWM e Componentes Associados</h2>
+
+            <p>
+                Caso o PWM apresente aquecimento excessivo,
+                ele pode ser o causador do problema.
+            </p>
+
+            <p>
+                Antes de removê-lo, é fundamental testar os componentes
+                ao seu redor, pois capacitores em curto ou com baixa
+                capacitância podem gerar o mesmo sintoma.
+            </p>
+
+            <!-- IMAGEM -->
+            <div class="image-placeholder card-image">
+                <a href="images/componentes/ps2/90k/regiao_PWM.png" data-zoom>
+                    <img src="images/componentes/ps2/90k/regiao_PWM.png" alt="Região do PWM e componentes próximos">
+                </a>
+                <p>📷 IMAGEM – Região do PWM e componentes próximos</p>
+            </div>
+
+
+            <p>
+                Mesmo removendo alguns capacitores,
+                o console pode ligar para fins de teste e confirmação.
+            </p>
+        </section>
+
+        <!-- TENSÕES -->
+        <section class="info-section">
+            <h2>📏 Verificação de Tensões</h2>
+
+            <ul>
+                <li>3.5V e 7.5V no PWM</li>
+                <li>3.5V nos quatro pontos próximos ao conector ethernet</li>
+            </ul>
+
+            <div class="image-row">
+                <!-- IMAGEM -->
+                <div class="image-placeholder">
+                    <a href="images/componentes/ps2/90k/Teste_PWM.png" data-zoom>
+                        <img src="images/componentes/ps2/90k/Teste_PWM.png" alt="Pontos de medição de tensão PWM">
+                    </a>
+                    <p>📷 IMAGEM – Pontos de medição de tensão PWM</p>
+                </div>
+                <div class="image-placeholder">
+                    <a href="images/componentes/ps2/90k/Teste_bloco_resistores102.png" data-zoom>
+                        <img src="images/componentes/ps2/90k/Teste_bloco_resistores102.png"
+                            alt="Pontos de medição de tensão Bloco de resistores 102">
+                    </a>
+                    <p>📷 IMAGEM – Pontos de medição de tensão Bloco de resistores 102</p>
+                </div>
+            </div>
+
+            <p>
+                Caso não haja tensão nesses pontos,
+                o defeito pode estar no <strong>bloco de resistores 102</strong>.
+            </p>
+        </section>
+
+        <!-- BLOCO DE RESISTORES -->
+        <section class="info-section">
+            <h2>📦 Bloco de Resistores 102</h2>
+
+            <p>
+                O bloco de resistores 102 (1k),
+                localizado na linha de standby,
+                pode estar aberto e incapaz de cumprir sua função.
+            </p>
+
+            <!-- IMAGEM -->
+            <div class="image-placeholder">
+                <a href="images/componentes/ps2/90k/bloco_resistores102.png" data-zoom>
+                    <img src="images/componentes/ps2/90k/bloco_resistores102.png" alt="Bloco de resistores 102 de 1K">
+                </a>
+                <p>📷 IMAGEM – Bloco de resistores 102de 1K</p>
+            </div>
+        </section>
+
+        <!-- FLEX POWER -->
+        <section class="info-section">
+            <h2>🔘 Flex do Botão Power</h2>
+
+            <ul>
+                <li>Remover o flex e verificar danos físicos</li>
+                <li>Checar mal contato ou oxidação</li>
+                <li>Possível ligar o console sem o botão para teste</li>
+            </ul>
+
+            <!-- IMAGEM -->
+            <div class="image-row">
+                <!-- IMAGEM -->
+                <div class="image-placeholder">
+                    <a href="images/componentes/ps2/90k/Botao-alternativo1.png" data-zoom>
+                        <img src="images/componentes/ps2/90k/Botao-alternativo1.png"
+                            alt="Ligação alternativa botão Power PS2 Slim 90k">
+                    </a>
+                    <p>📷 IMAGEM – Ligação alternativa botão Power PS2 Slim 90k</p>
+                </div>
+                <div class="image-placeholder">
+                    <a href="images/componentes/ps2/90k/Botao-alternativo2.png" data-zoom>
+                        <img src="images/componentes/ps2/90k/Botao-alternativo2.png"
+                            alt="Ligação alternativa botão Power PS2 Slim 90k">
+                    </a>
+                    <p>📷 IMAGEM – Ligação alternativa botão Power PS2 Slim 90k</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CURTO -->
+        <section class="info-section">
+            <h2>⚠️ Curto na Placa</h2>
+
+            <p>
+                O teste de curto é feito medindo continuidade
+                entre o positivo e negativo da alimentação da placa.
+            </p>
+
+            <ul>
+                <li>Não deve apresentar baixa resistência</li>
+                <li>Multímetro não pode emitir sinal sonoro</li>
+            </ul>
+
+            <p>
+                Caso seja identificado curto,
+                o próximo passo é testar os capacitores próximos.
+            </p>
+
+            <p>
+                Capacitores cerâmicos devem ser removidos,
+                testados fora da placa e o teste repetido no local.
+            </p>
+
+            <!-- IMAGEM -->
+            <div class="image-placeholder">
+                <a href="images/componentes/ps2/90k/curto_alimentacao-capacitores.png" data-zoom>
+                    <img src="images/componentes/ps2/90k/curto_alimentacao-capacitores.png"
+                        alt="Capacitor em curto / região afetada">
+                </a>
+                <p>📷 IMAGEM – Capacitor em curto / região afetada</p>
+            </div>
+
+            <p>
+                Em casos onde seja verificada <strong>baixa resistência nos capacitores da linha de 7.5V</strong>
+                próximos à alimentação, um causador comum desse sintoma pode ser
+                <strong>um capacitor localizado na parte traseira da placa, ao lado do fusível PS1</strong>.
+            </p>
+
+            <p>
+                O teste pode ser feito diretamente nesse capacitor utilizando
+                o multímetro em escala de continuidade.
+            </p>
+
+            <ul>
+                <li>Se o multímetro apitar ou indicar baixa resistência, o capacitor está em curto</li>
+                <li>Removendo o capacitor e repetindo o teste, o curto deve desaparecer</li>
+                <li>Confirmado o defeito, basta realizar a substituição do componente</li>
+            </ul>
+
+            <!-- IMAGEM -->
+            <div class="image-placeholder">
+                <a href="images/componentes/ps2/90k/capacitor-lado-ps1.png" data-zoom>
+                        <img src="images/componentes/ps2/90k/capacitor-lado-ps1.png"
+                            alt="Ligação alternativa botão Power PS2 Slim 90k">
+                    </a>
+                <p>📷 IMAGEM – Capacitor da linha de 7.5V na parte traseira da placa, ao lado do fusível PS1</p>
+            </div>
+
+            <p>
+                Após a substituição, repetir todos os testes
+                e verificar novamente os fusíveis PS.
+            </p>
+        </section>
+
+        <!-- ESPAÇO PARA FUTURAS INFORMAÇÕES -->
+        <section class="info-section expandable">
+            <h2>ℹ️ Informações Adicionais</h2>
+            <p>
+                Espaço reservado para observações futuras,
+                variações de placa, revisões ou casos específicos.
+            </p>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("components/footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+
+</body>
+
+</html>

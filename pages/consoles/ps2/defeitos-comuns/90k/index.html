@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation 2 | Defeitos Comuns</title>
+    <base href="/Base-de-Conserto-Gamer/">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+
+    <header class="console-header">
+        <img src="images/logos/ps2.png" alt="PlayStation 2">
+        <h1>PlayStation 2</h1>
+        <p>Defeitos Comuns</p>
+    </header>
+
+    <main>
+
+        <section class="defects-intro">
+            <h2>🔍 Diagnóstico por Categoria</h2>
+            <p>
+                Selecione abaixo a categoria relacionada ao problema apresentado
+                pelo console para acessar sintomas, causas comuns e orientações
+                técnicas de diagnóstico.
+            </p>
+        </section>
+
+        <section class="categories">
+
+            <a href="pages/consoles/ps2/defeitos-comuns/90k/nao-liga.html" class="card-link">
+                <div class="category-card">
+                    <h3>🔌Não Liga / Led Apagado</h3>
+                    <span>Fonte, fusíveis, standby, curto</span>
+                </div>
+            </a>
+
+            <a href="pages/consoles/ps2/defeitos-comuns/90k/video.html" class="card-link">
+                <div class="category-card">
+                    <h3>📺 Vídeo e Imagem</h3>
+                    <span>Sem imagem, tela preta, falhas gráficas</span>
+                </div>
+            </a>
+
+            <a href="leitura-de-disco.html" class="card-link">
+                <div class="category-card">
+                    <h3>💿 Leitura de Disco</h3>
+                    <span>Não lê mídia, laser, motores</span>
+                </div>
+            </a>
+
+            <a href="superaquecimento.html" class="card-link">
+                <div class="category-card">
+                    <h3>🌡️ Superaquecimento</h3>
+                    <span>Desliga sozinho, aquecimento excessivo</span>
+                </div>
+            </a>
+
+            <a href="audio.html" class="card-link">
+                <div class="category-card">
+                    <h3>🔊 Áudio</h3>
+                    <span>Sem som, ruído, falhas intermitentes</span>
+                </div>
+            </a>
+
+            <a href="geral.html" class="card-link">
+                <div class="category-card">
+                    <h3>⚠️ Defeitos Gerais</h3>
+                    <span>Travas, erros aleatórios, mau contato</span>
+                </div>
+            </a>
+
+        </section>
+
+        <section class="warning">
+            <h3>⚠️ Aviso Técnico</h3>
+            <p>
+                O conteúdo apresentado tem finalidade educacional.
+                Procedimentos de reparo envolvem riscos elétricos e físicos.
+                Execute apenas se possuir conhecimento técnico adequado.
+            </p>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

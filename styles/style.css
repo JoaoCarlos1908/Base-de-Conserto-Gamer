@@ -295,21 +295,65 @@ footer a:hover {
 }
 
 .defects-intro {
-            max-width: 900px;
-            margin: 0 auto 2rem;
-            text-align: center;
-        }
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
 
-        .defects-intro p {
-            color: var(--text-secondary, #666);
-            font-size: 0.95rem;
-        }
+.defects-intro p {
+    color: var(--text-secondary, #666);
+    font-size: 0.95rem;
+}
 
-        .category-card h3 {
-            margin-bottom: 0.4rem;
-        }
+.category-card h3 {
+    margin-bottom: 0.4rem;
+}
 
-        .category-card span {
-            font-size: 0.85rem;
-            color: var(--text-secondary, #777);
-        }
+.category-card span {
+    font-size: 0.85rem;
+    color: var(--text-secondary, #777);
+}
+
+.image-placeholder {
+    max-width: 420px;
+    /* mesmo “peso visual” dos cards */
+    margin: 1.5rem auto;
+    /* centraliza o bloco */
+    text-align: center;
+}
+
+.image-placeholder a {
+    display: block;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 240px;
+    /* altura fixa igual aos cards */
+    object-fit: cover;
+    /* mantém proporção e corta excesso */
+    border-radius: 12px;
+    /* mesmo raio dos cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: zoom-in;
+}
+
+.image-placeholder p {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.card-image img {
+    height: 240px;
+}
+
+.image-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.image-row .image-placeholder {
+    flex: 1 1 300px;
+}
