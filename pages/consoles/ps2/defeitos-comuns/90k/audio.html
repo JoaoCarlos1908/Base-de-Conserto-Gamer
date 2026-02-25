@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS2 | Áudio – Sem som, ruidos, falhas intermitentes</title>
+    <base href="/Base-de-Conserto-Gamer/">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="page-header">
+        <h1>🎮 Áudio – Sem som, ruidos, falhas intermitentes</h1>
+        <p class="page-description">
+            Diagnóstico técnico para PlayStation 2 Slim com falha de audio,
+            ausência de som ou ruidos.
+        </p>
+    </header>
+
+    <main class="content">
+
+        <!-- SINTOMA -->
+        <section class="info-section">
+            <h2>📌 Sintoma</h2>
+            <ul>
+                <li>Console liga, mas não apresenta imagem</li>
+                <li>Tela preta mesmo com o console ligado</li>
+                <li>Falhas gráficas, travamentos ou imagem instável</li>
+            </ul>
+        </section>
+
+        <section class="defect-page">
+
+            <section class="defeito">
+                <h2>PS2 Slim 90K liga, mas não apresenta áudio</h2>
+
+                <p>
+                    A ausência total de áudio nesse modelo está, na maioria dos casos,
+                    relacionada ao <strong>CI de áudio</strong>.
+                    Recomenda-se realizar as verificações abaixo em sequência.
+                </p>
+
+                <h2>🔎 Verificação do CI de áudio</h2>
+                <p>
+                    Inicie medindo as tensões de alimentação do CI de áudio.
+                    Caso alguma tensão esteja ausente, verifique primeiro a linha de alimentação
+                    antes de condenar o componente.
+                </p>
+
+                <p>
+                    Em alguns casos, o defeito está relacionado a <strong>solda fria ou oxidação</strong>.
+                    Recomenda-se refazer a solda do CI antes de optar pela substituição.
+                </p>
+
+                <p>
+                    Se, mesmo após o retrabalho, as tensões continuarem ausentes
+                    ou for identificado <strong>curto interno no CI</strong>,
+                    será necessária a substituição do componente.
+                </p>
+
+                <div class="image-row">
+                    <!-- IMAGEM -->
+                    <div class="image-placeholder">
+                        <a href="images/componentes/ps2/90k/ci_audio-loc.png" data-zoom>
+                            <img src="images/componentes/ps2/90k/ci_audio-loc.png"
+                                alt="Região do CI de Áudio">
+                        </a>
+                        <p>📷 IMAGEM – Região do CI de Áudio</p>
+                    </div>
+                    <div class="image-placeholder">
+                        <a href="images/componentes/ps2/90k/tensoes_ci_audio.png" data-zoom>
+                            <img src="images/componentes/ps2/90k/tensoes_ci_audio.png" 
+                            alt="Tensões correspondentes ao CI de Áudio">
+                        </a>
+                        <p>📷 IMAGEM – Tensões correspondentes ao CI de Áudio</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2>⚡ Transistor duplo da linha de áudio</h2>
+                <p>
+                    Outro componente que pode causar falhas no áudio é o
+                    <strong>transistor duplo presente no setor de saída</strong>.
+                </p>
+
+                <p>
+                    Em alguns casos, ao realizar sua remoção,
+                    o console volta a apresentar áudio normalmente,
+                    mesmo sem o componente instalado.
+                </p>
+
+                <p>
+                    Recomenda-se testar com cautela,
+                    certificando-se de que não há curto na linha
+                    antes da remoção definitiva.
+                </p>
+
+                <div class="image-row">
+                    <!-- IMAGEM -->
+                    <div class="image-placeholder">
+                        <a href="images/componentes/ps2/90k/transistor_duplo-loc.png" data-zoom>
+                            <img src="images/componentes/ps2/90k/transistor_duplo-loc.png"
+                                alt="Região do Transistor Duplo">
+                        </a>
+                        <p>📷 IMAGEM – Região do Transistor Duplo</p>
+                    </div>
+                    <div class="image-placeholder">
+                        <a href="images/componentes/ps2/90k/transistor_duplo.png" data-zoom>
+                            <img src="images/componentes/ps2/90k/transistor_duplo.png" 
+                            alt="Identificão do Transistor Duplo">
+                        </a>
+                        <p>📷 IMAGEM – Identificão do Transistor Duplo</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2>🔥 Capacitores na linha de áudio</h2>
+                <p>
+                    Em casos menos frequentes, capacitores defeituosos
+                    na linha de áudio podem causar ausência total ou falhas no som.
+                </p>
+
+                <p>
+                    Uma forma simples de diagnóstico é realizar um <strong>jumper temporário</strong>
+                    em sua ligação para teste.
+                    Caso o áudio retorne, é um forte indicativo de que o capacitor está defeituoso
+                    e deve ser substituído.
+                </p>
+
+                <p>
+                    Esse procedimento deve ser feito apenas para teste,
+                    não sendo recomendado manter o jumper como solução definitiva.
+                </p>
+
+                <div class="image-placeholder">
+                        <a href="images/componentes/ps2/90k/capacitores_audio.png" data-zoom>
+                            <img src="images/componentes/ps2/90k/capacitores_audio.png" 
+                            alt="Identificão dos capacitores da região de áudio">
+                        </a>
+                        <p>📷 IMAGEM – Identificão dos capacitores da região de áudio</p>
+                    </div>
+
+            </section>
+
+            <section class="defeito">
+                <h2>PS2 Slim 90K com áudio falhando ou distorcido</h2>
+
+                <p>
+                    Quando o áudio apresenta cortes, chiados ou distorções,
+                    recomenda-se verificar:
+                </p>
+
+                <ul>
+                    <li>Capacitores eletrolíticos da linha de áudio;</li>
+                    <li>Integridade das trilhas até o conector AV;</li>
+                    <li>Solda do CI de áudio;</li>
+                    <li>Possível oxidação no conector de saída.</li>
+                </ul>
+
+                <p>
+                    Caso todas as verificações estejam corretas,
+                    pode haver falha interna no CI de áudio,
+                    sendo necessária sua substituição.
+                </p>
+            </section>
+
+        </section>
+
+        <!-- 🔹 Aviso fixo -->
+        <section class="warning">
+            <h2>⚠️ Aviso Importante</h2>
+            <p>
+                Este conteúdo é destinado a fins educacionais.
+                Reparos eletrônicos envolvem riscos e podem causar danos
+                ao equipamento ou ao operador.
+                Execute apenas se possuir conhecimento técnico adequado.
+            </p>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("components/footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+
+</body>
+
+</html>

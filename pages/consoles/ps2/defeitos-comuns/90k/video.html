@@ -180,8 +180,7 @@
 
                 <div class="image-placeholder">
                     <a href="images/diagramas/ps2/90k/ci-imagem.png" data-zoom>
-                        <img src="images/diagramas/ps2/90k/ci-imagem.png"
-                            alt="Localização e tensões do CI de Imagem">
+                        <img src="images/diagramas/ps2/90k/ci-imagem.png" alt="Localização e tensões do CI de Imagem">
                     </a>
                     <p>📷 IMAGEM – Localização e tensões do CI de Imagem</p>
                 </div>
@@ -194,14 +193,121 @@
                     necessário a substituição do componente.
                 </p>
 
-                <div class="image-placeholder">
-                    <a href="images/diagramas/ps2/90k/tensoes-pwm.png" data-zoom>
-                        <img src="images/diagramas/ps2/90k/tensoes-pwm.png"
-                            alt="Tensões correspondentes ao PWM">
-                    </a>
-                    <p>📷 IMAGEM – Tensões correspondentes ao PWM</p>
+                <div class="image-row">
+                    <!-- IMAGEM -->
+                    <div class="image-placeholder">
+                        <a href="images/componentes/ps2/90k/regiao_PWM.png" data-zoom>
+                            <img src="images/componentes/ps2/90k/regiao_PWM.png"
+                                alt="Região do PWM e componentes próximos">
+                        </a>
+                        <p>📷 IMAGEM – Região do PWM e componentes próximos</p>
+                    </div>
+                    <div class="image-placeholder">
+                        <a href="images/diagramas/ps2/90k/tensoes-pwm.png" data-zoom>
+                            <img src="images/diagramas/ps2/90k/tensoes-pwm.png" alt="Tensões correspondentes ao PWM">
+                        </a>
+                        <p>📷 IMAGEM – Tensões correspondentes ao PWM</p>
+                    </div>
                 </div>
             </section>
+
+            <section class="defect-step">
+                <h2>🧩 Etapa adicional – Componente CXM</h2>
+
+                <p>
+                    Em alguns casos, o <strong>componente CXM</strong> pode ser o responsável
+                    pelo sintoma de o console ligar normalmente, porém sem apresentar imagem.
+                </p>
+
+                <p>
+                    Quando defeituoso, esse componente costuma apresentar
+                    <strong>fuga na linha de 1.8V</strong>,
+                    afetando diretamente o funcionamento do circuito de vídeo.
+                </p>
+
+                <div class="image-placeholder">
+                    <a href="images/componentes/ps2/90k/cxm.png" data-zoom>
+                        <img src="images/componentes/ps2/90k/cxm.png"
+                            alt="Componente CXM com saida de 1.8v resposavel pela imagem">
+                    </a>
+                    <p>📷 IMAGEM – Componente CXM com saida de 1.8v resposavel pela imagema</p>
+                </div>
+
+                <p>
+                    No momento, não há informações técnicas suficientes ou um método
+                    totalmente confiável para realizar a verificação direta desse componente
+                    ainda instalado na placa.
+                </p>
+
+                <p>
+                    Por esse motivo, a análise do CXM deve ser considerada
+                    <strong>apenas após todas as outras verificações</strong>
+                    de alimentação, resistores, PWM, MOSFET e CI de imagem
+                    terem sido realizadas e confirmadas como corretas.
+                </p>
+
+                <p>
+                    Como último recurso, caso nenhum outro defeito seja encontrado,
+                    pode-se considerar a <strong>substituição do CXM</strong>
+                    como forma de diagnóstico,
+                    ciente de que se trata de um procedimento mais invasivo
+                    e que deve ser feito com cautela.
+                </p>
+            </section>
+
+            <section class="defect-step">
+                <h2>🔌 Etapa avançada – Linha de 1.7V do setor de imagem obstruida/danificada </h2>
+
+                <p>
+                    Em situações onde a <strong>linha de 1.7V do setor de imagem</strong>
+                    esteja obstruída, interrompida ou danificada ao longo da placa,
+                    o console pode ligar normalmente, porém permanecer sem imagem.
+                </p>
+
+                <p>
+                    Após confirmar que a falha realmente está nessa linha — e não em
+                    componentes como PWM, resistores, MOSFET ou CI de imagem —
+                    existe uma <strong>alternativa de correção</strong>
+                    que pode ser aplicada.
+                </p>
+
+                <p>
+                    Essa alternativa consiste em realizar um <strong>jumper</strong>
+                    ligando o <strong>ponto inicial da linha no componente CXM</strong>
+                    diretamente até o <strong>ponto final do percurso</strong>,
+                    localizado na <strong>saída do conector de imagem</strong>.
+                </p>
+
+                <div class="image-placeholder">
+                    <a href="images/componentes/ps2/90k/capacitores-solidos.png" data-zoom>
+                        <img src="images/componentes/ps2/90k/capacitores-solidos.png"
+                            alt="Capacitores sólidos do setor de imagem">
+                    </a>
+                    <p>📷 IMAGEM – Capacitores sólidos do setor de imagem</p>
+                </div>
+
+                <p>
+                    Em muitos casos, o console volta a apresentar imagem após o jumper,
+                    porém é comum que a imagem fique com
+                    <strong>brilho excessivamente alto</strong>.
+                    Isso ocorre devido à ausência da atenuação original da linha.
+                </p>
+
+                <p>
+                    Para corrigir esse efeito, recomenda-se a inserção de um
+                    <strong>resistor de 68Ω (68R)</strong> em série com o jumper,
+                    ajudando a estabilizar o nível de tensão
+                    e normalizar o brilho da imagem.
+                </p>
+
+                <p>
+                    Este procedimento deve ser considerado uma
+                    <strong>solução alternativa</strong>
+                    e aplicado somente após esgotadas as demais possibilidades
+                    de diagnóstico, pois altera o percurso original do circuito.
+                </p>
+            </section>
+
 
             <!-- ETAPA 6 -->
             <section class="defect-step">
@@ -231,8 +337,94 @@
                 </p>
             </section>
 
+            <section class="defect-step">
+                <h2>📺 Imagem escura</h2>
+
+                <p>
+                    Esse sintoma está frequentemente associado ao setor de imagem da placa.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Capacitor sólido no setor de imagem</strong><br>
+                        Capacitores sólidos defeituosos nessa região podem causar
+                        escurecimento da imagem. A substituição preventiva pode ser necessária.
+                    </li>
+                </ul>
+
+                <div class="image-placeholder">
+                    <a href="images/componentes/ps2/90k/capacitores-solidos.png" data-zoom>
+                        <img src="images/componentes/ps2/90k/capacitores-solidos.png"
+                            alt="Capacitores sólidos do setor de imagem">
+                    </a>
+                    <p>📷 IMAGEM – Capacitores sólidos do setor de imagem</p>
+                </div>
+            </section>
+
+            <section class="defect-step">
+                <h2>🖥️ Imagem borrada ou quadriculada</h2>
+
+                <p>
+                    Esse defeito costuma estar relacionado a componentes próximos
+                    ao circuito de processamento de vídeo.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Blocos de resistores SMD (código 680)</strong><br>
+                        Os blocos de resistores identificados com o código <strong>“680”</strong>
+                        podem estar envolvidos nesse sintoma, realize a medição de cada um deles,
+                        estando presentes em ambos os lados da placa.
+                    </li>
+
+                    <div class="image-row">
+                        <!-- IMAGEM -->
+                        <div class="image-placeholder">
+                            <a href="images/componentes/ps2/90k/blocos-resitores680-cima.png" data-zoom>
+                                <img src="images/componentes/ps2/90k/blocos-resitores680-cima.png"
+                                    alt="Bloco de resistores 680 parte de cima da placa">
+                            </a>
+                            <p>📷 IMAGEM – Bloco de resistores 680 parte de cima da placa</p>
+                        </div>
+                        <div class="image-placeholder">
+                            <a href="images/componentes/ps2/90k/blocos-resitores680-baixo.png" data-zoom>
+                                <img src="images/componentes/ps2/90k/blocos-resitores680-baixo.png"
+                                    alt="Bloco de resistores 680 parte de baixo da placa">
+                            </a>
+                            <p>📷 IMAGEM – Bloco de resistores 680 parte de baixo da placa</p>
+                        </div>
+                    </div>
+
+                    <li>
+                        <strong>IC de imagem ao lado do cristal</strong><br>
+                        O CI de imagem localizado próximo ao cristal oscilador
+                        também pode apresentar falhas que resultam nesse defeito. Faça a medição das tensões
+                        correspodentes, caso alguma esteja em falta, tente refazer a solda do componente,
+                        se manter sem as devidas tensões realize a troca do CI.
+                    </li>
+                    <div class="image-placeholder">
+                        <a href="images/diagramas/ps2/90k/ci-imagem.png" data-zoom>
+                            <img src="images/diagramas/ps2/90k/ci-imagem.png"
+                                alt="Localização e tensões do CI de Imagem">
+                        </a>
+                        <p>📷 IMAGEM – Localização e tensões do CI de Imagem</p>
+                    </div>
+                </ul>
+            </section>
+
+
         </section>
 
+        <!-- 🔹 Aviso fixo -->
+        <section class="warning">
+            <h3>⚠️ Aviso Importante</h3>
+            <p>
+                Este conteúdo é destinado a fins educacionais.
+                Reparos eletrônicos envolvem riscos e podem causar danos
+                ao equipamento ou ao operador.
+                Execute apenas se possuir conhecimento técnico adequado.
+            </p>
+        </section>
 
     </main>
 
